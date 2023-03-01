@@ -1,0 +1,12 @@
+.bread-crumb {
+    color: var(--text);
+}
+
+.bread-crumb-title {
+    color: var(--text-highlight);
+
+}
+
+.bread-crumb:hover {
+    color: var(--highlight);
+}
