@@ -1,6 +1,7 @@
 import ProjectComponent from "./project-component";
 import React from "react";
-import "../App.css"
+import "../../App.css"
+import CurrentProjectComponent from "./current-project-component";
 
 const ProjectExperienceComponent = () => {
     return (
@@ -10,7 +11,7 @@ const ProjectExperienceComponent = () => {
 
                 </div>
             <div style={{width: "80%", justifyContent: "center"}} className={"flex-row"}>
-                <ProjectComponent title={"Homologations Management"}
+                <CurrentProjectComponent title={"Homologations Management"}
                                   date={"Januar 2022 - Heute"}
                                   description={"Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zulassungs- und Zertifizierungsprozessen von Fahrzeugen."}
                                   technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
