@@ -1,13 +1,14 @@
 import {Avatar, Button} from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import React from "react";
-import { styled } from '@mui/material/styles';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import {styled} from '@mui/material/styles';
+import Tooltip, {TooltipProps, tooltipClasses} from '@mui/material/Tooltip';
 
 
-import "./landing-component.css";
+import "./home-section-component.css";
 import "../../animations.css";
 import LanguageChoiceComponent from "../../components/language/language-choice-component";
+import TuBsChipComponent from "../../components/tu-bs-chip/tu-bs-chip-component";
 
 interface LandingComponentProps {
     children?: React.ReactNode;
@@ -15,9 +16,9 @@ interface LandingComponentProps {
 
 const HomeSectionComponent = (props: LandingComponentProps) => {
 
-    const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
-        <Tooltip {...props} classes={{ popper: className }} />
-    ))(({ theme }) => ({
+    const CustomTooltip = styled(({className, ...props}: TooltipProps) => (
+        <Tooltip {...props} classes={{popper: className}}/>
+    ))(({theme}) => ({
         [`& .${tooltipClasses.arrow}`]: {
             color: theme.palette.common.white,
         },
@@ -54,27 +55,30 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
     }
 
     return (
-        <section id="home" className={"landing-container flex-column"}>
+        <section id="home" className={"section-container home-container flex-column"} style={{justifyContent: "center"}}>
             {/*<LanguageChoiceComponent></LanguageChoiceComponent>*/}
             <div className={"landing-component flex-column"}>
-                <div className={"flex-row"} style={{alignItems: "baseline", gap: "1.4rem"}}>
-                    <div className={"landing-greeting"}>
-                        <span style={{fontSize: "2rem"}}></span>Hi, ich bin Dibo!
-                    </div>
-                </div>
-                <div>
+                <div className={"greeting"}>
+                    <span style={{fontSize: "2rem"}}></span>Hi, ich bin Dibo!
                 </div>
                 <div className={"landing-text"}>
                     {/*ich bin <Tooltip arrow*/}
                     {/*                 title={meTooltip()}><span*/}
                     {/*style={{color: "var(--text-highlight)"}}>Dibo</span></Tooltip>,*/}
-                    Software Entwicklerin aus <CustomTooltip placement="top-end" arrow title={locationTooltip()}><span
-                    style={{color: "var(--text-highlight)", verticalAlign: "baseline"}}>Deutschland.
-                    {/*<LocationOnIcon sx={{fontSize: 40}}/>*/}
-                    </span></CustomTooltip>
+                    Software Entwicklerin aus Deutschland.
+                    {/*<CustomTooltip placement="top-end" arrow title={locationTooltip()}><span*/}
+                    {/*style={{color: "var(--text-highlight)", verticalAlign: "baseline"}}>Deutschland.*/}
+                    {/*/!*<LocationOnIcon sx={{fontSize: 40}}/>*!/*/}
+                    {/*</span></CustomTooltip>*/}
+                </div>
+                <div className={"info-text"}>
+                    Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der <TuBsChipComponent/>
+                    <span> und arbeite nebenbei als Full-Stack Entwicklerin im Automobilumfeld.</span>
                 </div>
             </div>
-            {props.children}
+
+
+            {/*{props.children}*/}
             {/*<div style={{borderRadius: "10%", color: "var(--text)", borderColor: "var(--highlight)", width: "2%", padding: "4rem", fontSize: "1.4rem", border: "dotted 2px"}}>*/}
             {/*    Kontakt aufnehmen*/}
             {/*</div>*/}

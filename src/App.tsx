@@ -3,8 +3,8 @@ import './App.css';
 import PortfolioSectionComponent from "./sections/portfolio/portfolio-section-component";
 import ProjectsSectionComponent from "./sections/projects/projects-section-component";
 import InterestsSectionComponent from "./sections/interests/interests-section-component";
-import HomeSectionComponent from "./sections/landing/home-section-component";
-import InfoComponent from "./sections/landing/info-component";
+import HomeSectionComponent from "./sections/home/home-section-component";
+import InfoComponent from "./sections/home/info-component";
 import CertificatesSectionComponent from "./sections/certifactes/certificates-section-component";
 import SideMenu from "./sections/side-menu/side-menu";
 

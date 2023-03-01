@@ -12,7 +12,7 @@ html {
 }
 
 .app-content {
-    /*gap: 4rem;*/
+    gap: 4rem;
 }
 
 .flex-column {
@@ -34,11 +34,12 @@ a {
     font-weight: bold;
     font-size: 3rem;
     color: var(--panel-bg);
+    margin: 2rem;
 }
 
 .section-container {
     width: 100%;
-    gap: 1.4rem;
+    /*gap: 1.4rem;*/
     height: 100vh;
     align-items: center
 }
