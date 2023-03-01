@@ -1,6 +1,6 @@
 import React from "react";
-import InfoPanelComponent from "../utils/info-panel-component";
-import "../App.css";
+import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
+import "../../App.css";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -22,7 +22,7 @@ const PortfolioComponent = (props: PortfolioComponentProps) => {
 
             <InfoPanelComponent>
                 {/*Render Preview here!*/}
-                <img src={require("../simutales.png")} style={{width: "100%", borderRadius: "0.8rem", border: "1px white solid"}}></img>
+                <img src={require("../../simutales.png")} style={{width: "100%", borderRadius: "0.8rem", border: "1px white solid"}}></img>
             </InfoPanelComponent>
 
             <InfoPanelComponent>

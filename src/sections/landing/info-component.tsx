@@ -1,7 +1,7 @@
-import TuBsChipComponent from "../tu-bs-chip/tu-bs-chip-component";
+import TuBsChipComponent from "../../components/tu-bs-chip/tu-bs-chip-component";
 import React from "react";
 import "./info-component.css";
-import "../animations.css";
+import "../../animations.css";
 
 const InfoComponent = () => {
     return(

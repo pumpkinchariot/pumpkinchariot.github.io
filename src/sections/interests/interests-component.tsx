@@ -1,5 +1,5 @@
 import React from "react";
-import InfoPanelComponent from "../utils/info-panel-component";
+import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
 import {Avatar} from "@mui/material";
 
 const InterestsComponent = () => {
@@ -50,7 +50,7 @@ const InterestsComponent = () => {
                 padding: "2rem"
             }}>
                 <Avatar alt="Remy Sharp"
-                        src={require("../dibo_2.jpg")}
+                        src={require("../../dibo_2.jpg")}
                         sx={{width: 50, height: 50}}
                         variant="rounded"
                         style={{border: "2px var(--avatar-pink) solid", alignSelf: "baseline"}}/>

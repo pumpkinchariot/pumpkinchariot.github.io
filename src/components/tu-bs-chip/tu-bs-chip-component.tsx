@@ -7,7 +7,7 @@ const TuBsChipComponent = () => {
         <a href="https://www.tu-braunschweig.de/">
         <Chip
             id={"tu-chip"}
-            icon={<img id={"tu-icon"} src={require("../tu_wappen.jpg")}></img>}
+            icon={<img id={"tu-icon"} src={require("../../tu_wappen.jpg")}></img>}
             label="Technischen Universität Braunschweig"
             clickable/>
         </a>

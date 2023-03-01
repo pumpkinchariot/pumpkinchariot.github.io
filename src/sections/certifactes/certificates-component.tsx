@@ -1,6 +1,6 @@
-import InfoPanelComponent from "../utils/info-panel-component";
+import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
 import React from "react";
-import "../App.css";
+import "../../App.css";
 
 const CertificatesComponent = () => {
     return (
@@ -10,7 +10,7 @@ const CertificatesComponent = () => {
             </div>
             <InfoPanelComponent customStyle={{width: "60%"}}>
                 <div className={"flex-row"} style={{gap: "1rem"}}>
-                    <img src={require("../scrum.png")} style={{width: "30%"}}></img>
+                    <img src={require("../../scrum.png")} style={{width: "30%"}}></img>
                 </div>
             </InfoPanelComponent>
         </div>

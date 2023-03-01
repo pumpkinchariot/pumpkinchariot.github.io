@@ -1,7 +1,7 @@
 import {Divider} from "@mui/material";
 import React from "react";
 import "./project-component.css";
-import InfoPanelComponent from "../utils/info-panel-component";
+import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
 
 interface ProjectComponentProps {
     title: string;

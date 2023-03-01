@@ -6,7 +6,7 @@ import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 
 
 import "./landing-component.css";
-import "../animations.css";
+import "../../animations.css";
 
 interface LandingComponentProps {
     children?: React.ReactNode;
@@ -47,7 +47,7 @@ const LandingComponent = (props: LandingComponentProps) => {
                 <div style={{fontSize: "0.9rem"}}>
                     Remote aus Braunschweig, Niedersachsen
                 </div>
-                <img style={{width: "100%", borderRadius: "0.5rem"}} src={require("../location.jpg")}></img>
+                <img style={{width: "100%", borderRadius: "0.5rem"}} src={require("../../location.jpg")}></img>
             </div>
         );
     }
