@@ -35,8 +35,7 @@ jobs:
 
       - run: yarn install --frozen-lockfile
       - run: CI=false yarn build
-      - run: yarn export
-
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
