@@ -12,7 +12,7 @@ interface LandingComponentProps {
     children?: React.ReactNode;
 }
 
-const LandingComponent = (props: LandingComponentProps) => {
+const HomeSectionComponent = (props: LandingComponentProps) => {
 
     const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
         <Tooltip {...props} classes={{ popper: className }} />
@@ -53,7 +53,7 @@ const LandingComponent = (props: LandingComponentProps) => {
     }
 
     return (
-        <div className={"landing-container flex-column"}>
+        <section id="home" className={"landing-container flex-column"}>
             <div className={"landing-component flex-column"}>
                 <div className={"flex-row"} style={{alignItems: "baseline", gap: "1.4rem"}}>
                     <div className={"landing-greeting"}>
@@ -76,8 +76,8 @@ const LandingComponent = (props: LandingComponentProps) => {
             {/*<div style={{borderRadius: "10%", color: "var(--text)", borderColor: "var(--highlight)", width: "2%", padding: "4rem", fontSize: "1.4rem", border: "dotted 2px"}}>*/}
             {/*    Kontakt aufnehmen*/}
             {/*</div>*/}
-        </div>
+        </section>
     );
 }
 
-export default LandingComponent;
+export default HomeSectionComponent;

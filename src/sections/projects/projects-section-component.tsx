@@ -3,9 +3,9 @@ import React from "react";
 import "../../App.css"
 import CurrentProjectComponent from "./current-project-component";
 
-const ProjectExperienceComponent = () => {
+const ProjectsSectionComponent = () => {
     return (
-        <div className={"section-container flex-column"}>
+        <section id="projects" className={"section-container flex-column"}>
             <div className={"section-title"}>
                 ❮<span style={{color: "var(--white)"}}>ProjektErfahrung</span>❯
 
@@ -30,8 +30,8 @@ const ProjectExperienceComponent = () => {
                                   technologies={["JAVA | Spring Boot", "Groovy", "Hybernate", "Chromium Embedded Framework", "Angular (TypeScript, HTML, CSS)"]}/>
 
             </div>
-        </div>
+        </section>
     );
 }
 
-export default ProjectExperienceComponent;
+export default ProjectsSectionComponent;

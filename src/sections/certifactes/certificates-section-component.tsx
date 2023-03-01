@@ -2,9 +2,9 @@ import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
 import React from "react";
 import "../../App.css";
 
-const CertificatesComponent = () => {
+const CertificatesSectionComponent = () => {
     return (
-        <div className={"section-container flex-column"}>
+        <section id="certificates" className={"section-container flex-column"}>
             <div className={"section-title"}>
                 ❮<span style={{color: "var(--white"}}>Zertifikate</span>❯
             </div>
@@ -13,8 +13,8 @@ const CertificatesComponent = () => {
                     <img src={require("../../scrum.png")} style={{width: "30%"}}></img>
                 </div>
             </InfoPanelComponent>
-        </div>
+        </section>
     );
 }
 
-export default CertificatesComponent;
+export default CertificatesSectionComponent;

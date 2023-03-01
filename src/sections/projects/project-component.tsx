@@ -33,7 +33,7 @@ const ProjectComponent = (props: ProjectComponentProps) => {
 
             <Divider variant="inset"
 
-                     style={{backgroundColor: "var(--text-highlight)", margin: "0rem", padding: "0rem", width: "100%"}} className={props.customClass}/>
+                     style={{backgroundColor: "var(--panel-border)", margin: "0rem", padding: "0rem", width: "100%"}} className={props.customClass}/>
             <InfoPanelComponent customStyle={{margin: "0rem 0.5rem 0rem 0.5rem"}}>
                 <div style={{fontWeight: "bold", color: "var(--highlight)"}}>
                     {props.title}

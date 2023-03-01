@@ -2,7 +2,7 @@ import React from "react";
 import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
 import {Avatar} from "@mui/material";
 
-const InterestsComponent = () => {
+const InterestsSectionComponent = () => {
 
     const generateSkillTree = () => {
         const divs = [];
@@ -37,7 +37,7 @@ const InterestsComponent = () => {
     }
 
     return(
-        <div style={{width: "100%", alignSelf: "center"}} className={"section-container flex-column"}>
+        <section id="interests" style={{width: "100%", alignSelf: "center"}} className={"section-container flex-column"}>
             {generateSkillTree()}
 
             <div style={{color: "var(--highlight)", fontSize: "1.2rem"}}>
@@ -74,7 +74,7 @@ const InterestsComponent = () => {
                     Ansonsten interessiere ich mich für Pixel Art, Klavier spielen und Sprachen!
                 </ul>
             </div>
-        </div>
+        </section>
 
         // <div>
         //     <InfoPanelComponent>
@@ -87,4 +87,4 @@ const InterestsComponent = () => {
     );
 }
 
-export default InterestsComponent;
+export default InterestsSectionComponent;

@@ -8,10 +8,10 @@ interface PortfolioComponentProps {
 
 }
 
-const PortfolioComponent = (props: PortfolioComponentProps) => {
+const PortfolioSectionComponent = (props: PortfolioComponentProps) => {
 
     return (
-        <div style={{alignItems: "center"}} className={"section-container flex-column"}>
+        <section id="portfolio" style={{alignItems: "center"}} className={"section-container flex-column"}>
             <div className={"section-title"}>
                 ❮<span style={{color: "var(--white)"}}>Portfolio</span>❯
 
@@ -56,9 +56,9 @@ const PortfolioComponent = (props: PortfolioComponentProps) => {
             </InfoPanelComponent>
             </div>
 
-        </div>
+        </section>
     );
 
 }
 
-export default PortfolioComponent;
+export default PortfolioSectionComponent;

@@ -5,11 +5,11 @@ import BreadCrumbComponent from "./bread-crumb-component";
 const BreadCrumbsComponent = () => {
     return(
         <div className="flex-column" style={{textAlign: "right", marginRight: "5rem", gap: "0.4rem", color: "var(--highlight-violet) !important"}}>
-            <BreadCrumbComponent title={"Home"}></BreadCrumbComponent>
-            {/*<BreadCrumbComponent title={"Steckbrief"}></BreadCrumbComponent>*/}
-            <BreadCrumbComponent title={"ProjektErfahrung"}></BreadCrumbComponent>
-            <BreadCrumbComponent title={"Portfolio"}></BreadCrumbComponent>
-            <BreadCrumbComponent title={"Zertifikate"}></BreadCrumbComponent>
+            <BreadCrumbComponent sectionId="#home" title={"Home"}></BreadCrumbComponent>
+            {/*<BreadCrumbComponent sectionID="#interests" title={"Interessen"}></BreadCrumbComponent>*/}
+            <BreadCrumbComponent sectionId="#projects" title={"ProjektErfahrung"}></BreadCrumbComponent>
+            <BreadCrumbComponent sectionId="#portfolio" title={"Portfolio"}></BreadCrumbComponent>
+            <BreadCrumbComponent sectionId="#certificates" title={"Zertifikate"}></BreadCrumbComponent>
         </div>
     );
 }
