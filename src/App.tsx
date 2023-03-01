@@ -40,9 +40,9 @@ function App() {
 
             {/*<LanguageChoiceComponent/>*/}
             <div className={"app-content flex-column"}>
-                {/*<LandingComponent>*/}
-                {/*    <InfoComponent/>*/}
-                {/*</LandingComponent>*/}
+                <LandingComponent>
+                    <InfoComponent/>
+                </LandingComponent>
                 {/*<InterestsComponent/>*/}
                 <ProjectExperienceComponent/>
                 <PortfolioComponent/>

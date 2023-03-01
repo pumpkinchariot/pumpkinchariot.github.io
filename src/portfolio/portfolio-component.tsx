@@ -37,12 +37,15 @@ const PortfolioComponent = (props: PortfolioComponentProps) => {
 
 
                 <div style={{textAlign: "left"}}>
-                    Lebenssimulation mit multiplayer und vollständig simulierten Nachbarschaften.
-                    Kreiere eine Familie und spiele das Leben. Kochen, Gärtnern, Erkunden, Liebe.
-                    Keine Grenzen!
+                    Eine multiplayer Lebenssimulation in der die Freiheit hast, das zu tun was du möchtest!
+                    Baue ein Haus, oder auch eine ganze Stadt, erkunde, eröffne deinen eigenen Laden, oder finde die große Liebe!
                     <br></br>
                     <br></br>
-                    Spiele mit Freunden. Gemeinsam eine ganze Stadt gestalten. Simus mit einander interagieren lassen.
+                    Tauche in eine aufregende Welt voller Möglichkeiten ein und erlebe das Leben in einer lebendigen vollständig simulierten Nachbarschaft.
+                    <br></br>
+                    <br></br>
+                    Spiele mit Freunden und gestalte mit ihnen gemeinsam die Stadt oder lasst eure Simus miteinander interagieren!
+
                 </div>
 
                 {/*<div><span style={{color: "rgb(92, 187, 191)"}}>&gt;</span> Unity/C#</div>*/}
