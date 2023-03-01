@@ -1,6 +1,7 @@
 import React from "react";
 import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
 import {Avatar} from "@mui/material";
+import SectionTitleComponent from "../../utils/section-title-component";
 
 const InterestsSectionComponent = () => {
 
@@ -40,9 +41,8 @@ const InterestsSectionComponent = () => {
         <section id="interests" style={{width: "100%", alignSelf: "center"}} className={"section-container flex-column"}>
             {generateSkillTree()}
 
-            <div style={{color: "var(--highlight)", fontSize: "1.2rem"}}>
-                Steckbrief
-            </div>
+            <SectionTitleComponent title="Interessen"></SectionTitleComponent>
+
             <div style={{
                 fontSize: "1.8rem",
                 border: "1px var(--highlight) solid",

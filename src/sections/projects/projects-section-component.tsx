@@ -2,20 +2,18 @@ import ProjectComponent from "./project-component";
 import React from "react";
 import "../../App.css"
 import CurrentProjectComponent from "./current-project-component";
+import SectionTitleComponent from "../../utils/section-title-component";
 
 const ProjectsSectionComponent = () => {
     return (
         <section id="projects" className={"section-container flex-column"}>
-            <div className={"section-title"}>
-                ❮<span style={{color: "var(--white)"}}>ProjektErfahrung</span>❯
-
-                </div>
-            <div style={{width: "80%", justifyContent: "center"}} className={"flex-row"}>
+            <SectionTitleComponent title="ProjektErfahrung"></SectionTitleComponent>
+            <div style={{width: "80%", justifyContent: "center", alignItems: "baseline"}} className={"flex-row"}>
                 <CurrentProjectComponent title={"Homologations Management"}
-                                  date={"Januar 2022 - Heute"}
-                                  description={"Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zulassungs- und Zertifizierungsprozessen von Fahrzeugen."}
-                                  technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
-                                  customClass={"colored-divider"}/>
+                                         date={"Januar 2022 - Heute"}
+                                         description={"Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zulassungs- und Zertifizierungsprozessen von Fahrzeugen."}
+                                         technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
+                                         customClass={"colored-divider"}/>
                 <ProjectComponent title={"Cloudbasiertes Diagnose Framework"}
                                   date={"Juli 2021 - Juli 2022"}
                                   description={"Empirische entwicklung eines Frameworks zum Modellieren und Deployen von Konfigurationen zur Diagnose von Fahrzeugsensordaten auf Basis von Microservices am Institut für Softwaretechnik und Fahrzeuginformatik."}
