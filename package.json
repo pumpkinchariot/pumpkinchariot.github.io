@@ -1,5 +1,6 @@
 {
   "name": "pumpkinchariot.github.io",
+  "homepage": "https://pumpkinchariot.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build --output-path=docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
