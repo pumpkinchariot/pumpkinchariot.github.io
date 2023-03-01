@@ -1,0 +1,18 @@
+.social-icon {
+    color: var(--text-highlight);
+}
+
+.icon-button {
+    padding: 0rem !important;
+}
+
+.social-icon:hover {
+    color: var(--highlight);
+}
+
+.socials-line {
+    background-color: var(--text-highlight);
+    height: 50vh;
+    width: 1px;
+    align-self: center;
+}
