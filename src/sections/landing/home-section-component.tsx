@@ -7,6 +7,7 @@ import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 
 import "./landing-component.css";
 import "../../animations.css";
+import LanguageChoiceComponent from "../../components/language/language-choice-component";
 
 interface LandingComponentProps {
     children?: React.ReactNode;
@@ -54,6 +55,7 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
 
     return (
         <section id="home" className={"landing-container flex-column"}>
+            {/*<LanguageChoiceComponent></LanguageChoiceComponent>*/}
             <div className={"landing-component flex-column"}>
                 <div className={"flex-row"} style={{alignItems: "baseline", gap: "1.4rem"}}>
                     <div className={"landing-greeting"}>
