@@ -1,0 +1,13 @@
+#tu-chip {
+    background-color: var(--tu-red);
+    border-radius: 0.2rem;
+    color: var(--text-highlight);
+    font-size: 1.2rem;
+}
+
+#tu-icon {
+    width: 1.8rem;
+    border-radius: 0.2rem;
+    vertical-align: text-bottom;
+}
+

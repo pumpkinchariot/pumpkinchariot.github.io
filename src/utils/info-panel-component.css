@@ -1,0 +1,9 @@
+.panel {
+    background-color: var(--panel-bg);
+    border: 1px var(--panel-border) solid;
+    border-radius: 0.8rem;
+    /*margin: 1rem;*/
+    padding: 0.8rem;
+    gap: 1rem;
+    color: var(--panel-text);
+}
