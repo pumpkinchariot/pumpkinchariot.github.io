@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.71b016f5.css",
-    "main.js": "/static/js/main.7473e96f.js",
-    "static/js/787.ce81aeb5.chunk.js": "/static/js/787.ce81aeb5.chunk.js",
+    "main.js": "/static/js/main.5b3b01b0.js",
+    "static/js/787.21018835.chunk.js": "/static/js/787.21018835.chunk.js",
     "static/media/scrum.png": "/static/media/scrum.a9c0fb316d9fe2a45226.png",
     "static/media/location.jpg": "/static/media/location.51902406eec5d85fc5c7.jpg",
     "static/media/simutales.png": "/static/media/simutales.0ac2c1d8f9bf72dbe131.png",
     "static/media/tu_wappen.jpg": "/static/media/tu_wappen.7fc4f353a2749ea49c1e.jpg",
     "index.html": "/index.html",
     "main.71b016f5.css.map": "/static/css/main.71b016f5.css.map",
-    "main.7473e96f.js.map": "/static/js/main.7473e96f.js.map",
-    "787.ce81aeb5.chunk.js.map": "/static/js/787.ce81aeb5.chunk.js.map"
+    "main.5b3b01b0.js.map": "/static/js/main.5b3b01b0.js.map",
+    "787.21018835.chunk.js.map": "/static/js/787.21018835.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71b016f5.css",
-    "static/js/main.7473e96f.js"
+    "static/js/main.5b3b01b0.js"
   ]
 }
