@@ -17,6 +17,9 @@
 .landing-text {
     text-align: left;
     font-size: 3rem;
+
+    animation-name: fade-in;
+    animation-duration: 4s;
 }
 
 .info-text {
