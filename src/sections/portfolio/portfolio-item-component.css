@@ -1,0 +1,8 @@
+.link-icon {
+    color: var(--text-highlight);
+    fontSize: "1.2rem"
+}
+
+.link-icon:hover {
+    color: var(--highlight);
+}
