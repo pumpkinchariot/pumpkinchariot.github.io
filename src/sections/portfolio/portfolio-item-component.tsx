@@ -10,9 +10,15 @@ interface PortfolioItemComponent {
     imgPath: string;
     url?: string;
     gitHubUrl: string;
+    tags?: string[];
 }
 
 const PortfolioItemComponent = (props: PortfolioItemComponent) => {
+
+    const listItems = props.tags?.map((tag) =>
+        <div style={{backgroundColor: "#988ebc14", borderRadius: "1rem", padding: "0.2rem 0.4rem 0.2rem 0.4rem"}}>#{tag}</div>
+    );
+
     return(
         <div style={{width: "60%", gap: "1rem"}} className={"flex-column"}>
             <InfoPanelComponent>
@@ -57,8 +63,8 @@ const PortfolioItemComponent = (props: PortfolioItemComponent) => {
                 </div>
 
                 {/*<div><span style={{color: "rgb(92, 187, 191)"}}>&gt;</span> Unity/C#</div>*/}
-                <div>
-                    #GameDev #Unity|C#
+                <div className={"flex-row"} style={{justifyContent: "center", gap: "0.4rem"}}>
+                    {listItems}
                 </div>
 
             </InfoPanelComponent>

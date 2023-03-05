@@ -15,7 +15,12 @@ const PortfolioSectionComponent = (props: PortfolioComponentProps) => {
     return (
         <section id="portfolio" style={{alignItems: "center"}} className={"section-container flex-column"}>
             <SectionTitleComponent title="Portfolio"></SectionTitleComponent>
-            <PortfolioItemComponent title="Simutales" imgPath={"../../simutales.png"} url={"https://themoonforge.github.io/simutales.github.io/"} gitHubUrl={"https://github.com/themoonforge/simutales"}></PortfolioItemComponent>
+            <PortfolioItemComponent
+                title="Simutales"
+                imgPath={"../../simutales.png"}
+                url={"https://themoonforge.github.io/simutales.github.io/"}
+                gitHubUrl={"https://github.com/themoonforge/simutales"}
+                tags={["Unity", "GameDev", "C++"]}></PortfolioItemComponent>
         </section>
     );
 
