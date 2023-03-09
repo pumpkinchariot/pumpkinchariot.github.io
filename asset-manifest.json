@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8c8d5f93.css",
-    "main.js": "/static/js/main.ec2a480f.js",
+    "main.js": "/static/js/main.84b7a3bf.js",
     "static/js/787.21018835.chunk.js": "/static/js/787.21018835.chunk.js",
     "static/media/scrum.png": "/static/media/scrum.a9c0fb316d9fe2a45226.png",
     "static/media/location.jpg": "/static/media/location.51902406eec5d85fc5c7.jpg",
@@ -9,11 +9,11 @@
     "static/media/tu_wappen.jpg": "/static/media/tu_wappen.7fc4f353a2749ea49c1e.jpg",
     "index.html": "/index.html",
     "main.8c8d5f93.css.map": "/static/css/main.8c8d5f93.css.map",
-    "main.ec2a480f.js.map": "/static/js/main.ec2a480f.js.map",
+    "main.84b7a3bf.js.map": "/static/js/main.84b7a3bf.js.map",
     "787.21018835.chunk.js.map": "/static/js/787.21018835.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c8d5f93.css",
-    "static/js/main.ec2a480f.js"
+    "static/js/main.84b7a3bf.js"
   ]
 }
