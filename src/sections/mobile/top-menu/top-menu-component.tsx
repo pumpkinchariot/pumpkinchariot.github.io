@@ -9,10 +9,10 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const TopMenuComponent = () => {
     return (
-        <div style={{height: "10vh", width: "100%", position: "fixed", zIndex: "9999", gap: "0.5rem"}}
+        <div style={{height: "8vh", width: "100%", position: "fixed", zIndex: "9999", gap: "0.5rem"}}
              className="top-menu flex-column">
 
-            <div className="flex-row" style={{gap: "0.5rem", marginRight: "2rem", justifyContent: "flex-end"}}>
+            <div className="flex-row" style={{gap: "0.5rem", marginRight: "1rem", justifyContent: "flex-end"}}>
                 <div className="button-border">
                     <SocialLinkComponent link={"https://github.com/pumpkinchariot"}>
                         <GitHubIcon className="social-icon"></GitHubIcon>

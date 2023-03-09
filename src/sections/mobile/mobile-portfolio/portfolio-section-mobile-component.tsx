@@ -1,20 +1,21 @@
 import React from "react";
-import "../../../App.css";
 import SectionTitleComponent from "../../../utils/section-title-component";
 import PortfolioItemComponent from "../../portfolio/portfolio-item-component";
+import "../../../App.css";
+import "./portfolio-section-mobile-component.css";
 
 const PortfolioSectionMobileComponent = () => {
     const portfolioItemStyle = () => {
         return (
             {
-                width: "80%",
+                width: "90%",
                 gap: "1rem"
             }
         );
     }
 
     return (
-        <section id="portfolio" style={{alignItems: "center"}} className={"section-container flex-column"}>
+        <section id="portfolio" style={{alignItems: "center"}} className={"portfolio-section section-container flex-column"}>
             <SectionTitleComponent title="Portfolio"></SectionTitleComponent>
             <PortfolioItemComponent
                 title="Simutales"

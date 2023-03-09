@@ -57,6 +57,10 @@ a {
 }
 
 @media (max-width: 768px) {
+    .app-content {
+        gap: 0rem;
+    }
+
     .section-title {
         font-weight: bold;
         font-size: 2rem;

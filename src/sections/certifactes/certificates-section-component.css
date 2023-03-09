@@ -1,0 +1,10 @@
+.certificates-section {
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .certificates-section{
+        justify-content: flex-start;
+        background-color: #0000008a;
+    }
+}

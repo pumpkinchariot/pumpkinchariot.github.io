@@ -1,8 +1,9 @@
 import ProjectComponent from "./project-component";
 import React from "react";
-import "../../App.css"
 import SectionTitleComponent from "../../utils/section-title-component";
 import {Divider} from "@mui/material";
+import "../../App.css";
+import "../mobile/mobile-projects/projects-section-mobile-component.css"
 
 const ProjectsSectionComponent = () => {
 

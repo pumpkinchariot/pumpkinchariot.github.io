@@ -2,7 +2,7 @@ import React from "react";
 import ProjectComponent from "../../projects/project-component";
 import SectionTitleComponent from "../../../utils/section-title-component";
 import "../../../App.css";
-
+import "./projects-section-mobile-component.css";
 
 const ProjectsSectionMobileComponent = () => {
 
@@ -17,7 +17,7 @@ const ProjectsSectionMobileComponent = () => {
     }
 
     return (
-        <section id="projects" className={"section-container flex-column"}>
+        <section id="projects" className={"projects-section section-container flex-column"}>
             <SectionTitleComponent title="ProjektErfahrung"></SectionTitleComponent>
             <div style={{width: "80%", justifyContent: "center", alignItems: "baseline"}} className={"flex-column"}>
                 <ProjectComponent title={"Homologations Management"}

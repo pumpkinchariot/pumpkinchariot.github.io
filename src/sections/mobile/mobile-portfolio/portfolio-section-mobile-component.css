@@ -1,0 +1,9 @@
+.portfolio-section {
+
+}
+
+@media (max-width: 768px) {
+    .portfolio-section {
+        background-color: #0b010f73;
+    }
+}

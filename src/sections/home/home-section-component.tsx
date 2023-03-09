@@ -60,9 +60,14 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
             {/*<LanguageChoiceComponent></LanguageChoiceComponent>*/}
             <div className={"landing-component flex-column"}>
                 <div className={"greeting"}>
-                    <span style={{fontSize: "2rem"}}></span>Hi, ich bin Dibo!
+                    <span style={{fontSize: "2rem"}}></span>Hi, ich bin Dibo! :)
                 </div>
-                <div className={"landing-text"}>
+                <div className={"landing-text flex-row"}>
+                    {/*<div style={{height: "80%", width: "3px", backgroundColor: "#6359852e"}}>*/}
+
+                    {/*</div>*/}
+
+
                     {/*ich bin <Tooltip arrow*/}
                     {/*                 title={meTooltip()}><span*/}
                     {/*style={{color: "var(--text-highlight)"}}>Dibo</span></Tooltip>,*/}
@@ -77,12 +82,15 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
                         Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der
                     </span>
                     <span>
-                        &nbsp;&nbsp;<TuBsChipComponent/>&nbsp;&nbsp;
+                        &nbsp;<TuBsChipComponent/>&nbsp;
                     </span>
                     <span>
                         und arbeite nebenbei als Full-Stack Entwicklerin im Automobilumfeld.
                     </span>
                 </div>
+
+                {/*<Button className="contact-button" style={{marginTop: "1rem", width: "100%", alignSelf: "center", height: "48px", backgroundColor: "#1d1a25", borderRadius: "8px"}} variant="contained">Kontakt</Button>*/}
+
             </div>
 
 
