@@ -62,7 +62,12 @@ a {
         font-size: 2rem;
         color: var(--panel-bg);
         margin: 2rem;
-    }}
+    }
+
+    .footer-container {
+        font-size: 0.6rem;
+    }
+}
 
 
 /*.App-logo {*/
