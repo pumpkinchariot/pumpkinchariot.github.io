@@ -35,6 +35,38 @@
     animation-fill-mode: forwards;
 }
 
+@media (max-width: 768px) {
+
+    .greeting {
+        font-size: 4rem;
+        color: var(--text-highlight);
+
+        animation-name: fade-in;
+        animation-duration: 4s;
+    }
+
+    .landing-text {
+        text-align: left;
+        font-size: 2rem;
+
+        animation-name: fade-in;
+        animation-duration: 4s;
+    }
+
+    .info-text {
+        font-size: 1.6rem;
+        text-align: left;
+        width: 80%;
+        margin-top: 2rem;
+
+        opacity: 0;
+        animation-name: fade-in;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
 /*.typewriter h1 {*/
 /*    overflow: hidden; !* Ensures the content is not revealed until the animation *!*/
 /*    border-right: .15em solid orange; !* The typwriter cursor *!*/

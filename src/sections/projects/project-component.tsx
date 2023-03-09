@@ -8,8 +8,8 @@ interface ProjectComponentProps {
     date: string;
     description: string;
     technologies: string[];
-
-    customClass?: string;
+    customStyle?: React.CSSProperties;
+    children?: React.ReactNode;
 
 }
 
@@ -20,20 +20,11 @@ const ProjectComponent = (props: ProjectComponentProps) => {
     );
 
     return (
-        <div style={{
-            fontSize: "1rem",
-            width: "20%",
-            gap: "1rem"
-        }}
-             className={"flex-column"}
-        >
+        <div style={props.customStyle} className={"flex-column"}>
             <div style={{color: "var(--text-highlight)"}}>
                 {props.date}
             </div>
-
-            <Divider variant="inset"
-
-                     style={{backgroundColor: "var(--panel-border)", margin: "0rem", padding: "0rem", width: "100%"}} className={props.customClass}/>
+            {props.children}
             <InfoPanelComponent customStyle={{margin: "0rem 0.5rem 0rem 0.5rem"}}>
                 <div style={{fontWeight: "bold", color: "var(--highlight)"}}>
                     {props.title}

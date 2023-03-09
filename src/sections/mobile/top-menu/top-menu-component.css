@@ -1,0 +1,18 @@
+.top-menu {
+    background-color: #63598533;
+    /*border-bottom: var(--text-highlight);*/
+    border-bottom-color: #b29cfb33;
+    border-bottom-style: solid;
+    border-width: 0.1rem;
+    backdrop-filter: blur(0.5rem);
+    justify-content: flex-end;
+    justify-content: center;
+}
+
+.button-border {
+    border-color: #b29cfb33;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 1rem;
+    padding: 0.6rem;
+}

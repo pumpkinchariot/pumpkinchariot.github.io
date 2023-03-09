@@ -11,3 +11,19 @@
     vertical-align: text-bottom;
 }
 
+@media (max-width: 768px) {
+    #tu-chip {
+        color: var(--white);
+        background-color: var(--tu-red);
+        border-radius: 0.2rem;
+        font-size: 1rem;
+    }
+
+    #tu-icon {
+        width: 1.4rem;
+        border-radius: 0.2rem;
+        vertical-align: text-bottom;
+    }
+}
+
+

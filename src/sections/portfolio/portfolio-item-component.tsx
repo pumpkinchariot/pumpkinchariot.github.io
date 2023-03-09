@@ -11,6 +11,7 @@ interface PortfolioItemComponent {
     url?: string;
     gitHubUrl: string;
     tags?: string[];
+    customStyle?: React.CSSProperties;
 }
 
 const PortfolioItemComponent = (props: PortfolioItemComponent) => {
@@ -20,7 +21,7 @@ const PortfolioItemComponent = (props: PortfolioItemComponent) => {
     );
 
     return(
-        <div style={{width: "60%", gap: "1rem"}} className={"flex-column"}>
+        <div style={props.customStyle} className={"flex-column"}>
             <InfoPanelComponent>
                 {/*Render Preview here!*/}
                 <img src={require("../../simutales.png")}
