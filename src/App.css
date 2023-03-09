@@ -56,6 +56,15 @@ a {
     margin: 6rem;
 }
 
+@media (max-width: 768px) {
+    .section-title {
+        font-weight: bold;
+        font-size: 2rem;
+        color: var(--panel-bg);
+        margin: 2rem;
+    }}
+
+
 /*.App-logo {*/
 /*  height: 40vmin;*/
 /*  pointer-events: none;*/
