@@ -55,7 +55,8 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
     }
 
     return (
-        <section id="home" className={"section-container home-container flex-column"} style={{justifyContent: "center"}}>
+        <section id="home" className={"section-container home-container flex-column"}
+                 style={{justifyContent: "center"}}>
             {/*<LanguageChoiceComponent></LanguageChoiceComponent>*/}
             <div className={"landing-component flex-column"}>
                 <div className={"greeting"}>
@@ -72,8 +73,15 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
                     {/*</span></CustomTooltip>*/}
                 </div>
                 <div className={"info-text"}>
-                    Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der <TuBsChipComponent/>
-                    <span> und arbeite nebenbei als Full-Stack Entwicklerin im Automobilumfeld.</span>
+                    <span>
+                        Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der
+                    </span>
+                    <span>
+                        &nbsp;&nbsp;<TuBsChipComponent/>&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        und arbeite nebenbei als Full-Stack Entwicklerin im Automobilumfeld.
+                    </span>
                 </div>
             </div>
 
