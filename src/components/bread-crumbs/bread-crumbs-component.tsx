@@ -8,7 +8,7 @@ const BreadCrumbsComponent = () => {
             <BreadCrumbComponent sectionId="#home" title={"Home"}></BreadCrumbComponent>
             {/*<BreadCrumbComponent sectionID="#interests" title={"Interessen"}></BreadCrumbComponent>*/}
             <BreadCrumbComponent sectionId="#projects" title={"ProjektErfahrung"}></BreadCrumbComponent>
-            <BreadCrumbComponent sectionId="#portfolio" title={"Portfolio"}></BreadCrumbComponent>
+            {/*<BreadCrumbComponent sectionId="#portfolio" title={"Portfolio"}></BreadCrumbComponent>*/}
             <BreadCrumbComponent sectionId="#certificates" title={"Zertifikate"}></BreadCrumbComponent>
         </div>
     );
