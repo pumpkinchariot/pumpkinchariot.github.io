@@ -16,7 +16,8 @@ code {
 :root {
   /*--background: #282c34;*/
   --white: white;
-  --background: #23212c;
+  /*--background: #23212c;*/
+  --background: #22202d;
   --text: #635985;
   --text-highlight: #d4c9f8;
   --panel-bg: #b899f91c;
