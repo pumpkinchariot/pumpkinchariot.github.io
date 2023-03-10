@@ -1,0 +1,20 @@
+.panel-section {
+    border-style: none;
+    /*border-color: #8476b391;*/
+    border-color: transparent;
+    width: 100%;
+    padding: 0.8rem;
+    /*background-color: transparent;*/
+    color: var(--text);
+    gap: 1rem;
+    background-color: #b29cfb0d;
+}
+
+.panel-section:active {
+    background-color: #b29cfb14;
+}
+
+.active-panel-section {
+    background-color: #b29cfb14;
+    min-height: 50vh;
+}

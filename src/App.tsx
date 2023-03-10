@@ -42,7 +42,7 @@ function App() {
                 {/*<InterestsSectionComponent/>*/}
 
                 {isMobile ? <ProjectsSectionMobileComponent/> : <ProjectsSectionComponent/>}
-                {isMobile ? <PortfolioSectionMobileComponent/> : <PortfolioSectionComponent/>}
+                {/*{isMobile ? <PortfolioSectionMobileComponent/> : <PortfolioSectionComponent/>}*/}
 
                 <CertificatesSectionComponent></CertificatesSectionComponent>
 

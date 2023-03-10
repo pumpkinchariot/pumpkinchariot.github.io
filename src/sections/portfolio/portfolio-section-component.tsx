@@ -1,9 +1,9 @@
 import React from "react";
-import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
+import InfoPanelComponent from "../../components/info-panel/info-panel-component";
 import "../../App.css";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import SectionTitleComponent from "../../utils/section-title-component";
+import SectionTitleComponent from "../../components/section-title/section-title-component";
 import PortfolioItemComponent from "./portfolio-item-component";
 
 interface PortfolioComponentProps {

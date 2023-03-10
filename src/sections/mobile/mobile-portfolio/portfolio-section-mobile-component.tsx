@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitleComponent from "../../../utils/section-title-component";
+import SectionTitleComponent from "../../../components/section-title/section-title-component";
 import PortfolioItemComponent from "../../portfolio/portfolio-item-component";
 import "../../../App.css";
 import "./portfolio-section-mobile-component.css";

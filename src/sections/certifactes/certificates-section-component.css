@@ -2,10 +2,19 @@
     justify-content: center;
 }
 
+
+#scrum-img {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .certificates-section{
         justify-content: flex-start;
         /*background-color: #0000008a;*/
         background-color: #16141d;
+    }
+
+    #scrum-img {
+        width: 100%;
     }
 }

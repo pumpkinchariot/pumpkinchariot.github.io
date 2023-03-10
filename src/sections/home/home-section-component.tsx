@@ -89,7 +89,7 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
                     </span>
                 </div>
 
-                <Button className="contact-button" style={{marginTop: "1rem", width: "100%", alignSelf: "center", height: "48px", backgroundColor: "#1d1a25", borderRadius: "8px"}} variant="contained">Kontakt</Button>
+                <Button className="contact-button" style={{width: "100%", alignSelf: "center", height: "48px", backgroundColor: "#1d1a25", borderRadius: "8px"}} variant="contained">Kontakt</Button>
 
             </div>
 

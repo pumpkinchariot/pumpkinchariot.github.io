@@ -1,7 +1,7 @@
 import React from "react";
-import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
+import InfoPanelComponent from "../../components/info-panel/info-panel-component";
 import {Avatar} from "@mui/material";
-import SectionTitleComponent from "../../utils/section-title-component";
+import SectionTitleComponent from "../../components/section-title/section-title-component";
 
 const InterestsSectionComponent = () => {
 

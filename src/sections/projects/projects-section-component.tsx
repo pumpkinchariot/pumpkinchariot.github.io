@@ -1,6 +1,6 @@
-import ProjectComponent from "./project-component";
+import ProjectComponent from "../../components/project/project-component";
 import React from "react";
-import SectionTitleComponent from "../../utils/section-title-component";
+import SectionTitleComponent from "../../components/section-title/section-title-component";
 import {Divider} from "@mui/material";
 import "../../App.css";
 import "../mobile/mobile-projects/projects-section-mobile-component.css"
@@ -11,7 +11,7 @@ const ProjectsSectionComponent = () => {
         return (
             {
                 fontSize: "1rem",
-                width: "20%",
+                width: "22%",
                 gap: "1rem"
             }
         );
@@ -23,7 +23,7 @@ const ProjectsSectionComponent = () => {
             <div style={{width: "80%", justifyContent: "center", alignItems: "baseline"}} className={"flex-row"}>
                 <ProjectComponent title={"Homologations Management"}
                                   date={"Januar 2022 - Heute"}
-                                  description={"Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zulassungs- und Zertifizierungsprozessen von Fahrzeugen."}
+                                  description={"Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zulassungs- und (Zertifizierungs) prozessen von Fahrzeugen."}
                                   technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
                                   customStyle={projectComponentStyle()}/>
                 <ProjectComponent title={"Cloudbasiertes Diagnose Framework"}

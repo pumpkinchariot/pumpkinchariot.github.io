@@ -1,7 +1,8 @@
 import {Divider} from "@mui/material";
 import React from "react";
+import InfoPanelComponent from "../info-panel/info-panel-component";
 import "./project-component.css";
-import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
+
 
 interface ProjectComponentProps {
     title: string;
@@ -25,7 +26,7 @@ const ProjectComponent = (props: ProjectComponentProps) => {
                 {props.date}
             </div>
             {props.children}
-            <InfoPanelComponent customStyle={{margin: "0rem 0.5rem 0rem 0.5rem"}}>
+            <InfoPanelComponent customStyle={{margin: "0rem 0.5rem 0rem 0.5rem", fontSize: "0.8rem"}}>
                 <div style={{fontWeight: "bold", color: "var(--highlight)"}}>
                     {props.title}
                 </div>

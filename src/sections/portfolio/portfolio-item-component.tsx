@@ -1,4 +1,4 @@
-import InfoPanelComponent from "../../utils/info-panel/info-panel-component";
+import InfoPanelComponent from "../../components/info-panel/info-panel-component";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import React from "react";
