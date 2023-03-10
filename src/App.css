@@ -65,11 +65,12 @@ a {
         font-weight: bold;
         font-size: 2rem;
         color: var(--panel-bg);
-        margin: 2rem;
+        margin: 1rem;
     }
 
     .footer-container {
         font-size: 0.6rem;
+        background-color: #16141d;
     }
 }
 

@@ -64,7 +64,7 @@ const PortfolioItemComponent = (props: PortfolioItemComponent) => {
                 </div>
 
                 {/*<div><span style={{color: "rgb(92, 187, 191)"}}>&gt;</span> Unity/C#</div>*/}
-                <div className={"flex-row"} style={{justifyContent: "center", gap: "0.4rem"}}>
+                <div className={"tags-container flex-row"}>
                     {listItems}
                 </div>
 

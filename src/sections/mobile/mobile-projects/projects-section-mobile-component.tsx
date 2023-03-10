@@ -10,8 +10,9 @@ const ProjectsSectionMobileComponent = () => {
         return (
             {
                 fontSize: "1rem",
-                width: "70%",
-                gap: "1rem"
+                width: "100%",
+                gap: "1rem",
+                height: "70vh"
             }
         );
     }

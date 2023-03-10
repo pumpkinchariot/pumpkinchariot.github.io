@@ -9,7 +9,7 @@ const PortfolioSectionMobileComponent = () => {
         return (
             {
                 width: "90%",
-                gap: "1rem"
+                gap: "1rem",
             }
         );
     }

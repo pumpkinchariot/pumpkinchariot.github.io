@@ -79,17 +79,17 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
                 </div>
                 <div className={"info-text"}>
                     <span>
-                        Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der
+                        Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der&nbsp;
                     </span>
                     <span>
-                        &nbsp;<TuBsChipComponent/>&nbsp;
+                        <TuBsChipComponent/>&nbsp;
                     </span>
                     <span>
                         und arbeite nebenbei als Full-Stack Entwicklerin im Automobilumfeld.
                     </span>
                 </div>
 
-                {/*<Button className="contact-button" style={{marginTop: "1rem", width: "100%", alignSelf: "center", height: "48px", backgroundColor: "#1d1a25", borderRadius: "8px"}} variant="contained">Kontakt</Button>*/}
+                <Button className="contact-button" style={{marginTop: "1rem", width: "100%", alignSelf: "center", height: "48px", backgroundColor: "#1d1a25", borderRadius: "8px"}} variant="contained">Kontakt</Button>
 
             </div>
 

@@ -6,3 +6,17 @@
 .link-icon:hover {
     color: var(--highlight);
 }
+
+.tags-container {
+    justify-content: center;
+    gap: 0.4rem
+}
+
+@media (max-width: 768px) {
+    .tags-container {
+        justify-content: center;
+        gap: 0.4rem;
+        margin-top: 4.4rem;
+    }
+
+}
