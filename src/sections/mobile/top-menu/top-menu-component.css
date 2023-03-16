@@ -16,3 +16,16 @@
     border-radius: 1rem;
     padding: 0.6rem;
 }
+
+.menu-button {
+    border-radius: 1rem;
+    padding: 0.6rem;
+    background-color: #b29cfb33;
+    border-style: none;
+    color: transparent;
+    vertical-align: middle;
+}
+
+.menu-button:hover {
+    color: var(--white);
+}

@@ -19,6 +19,11 @@
   "project-title.skeditor": "Skeditor",
   "project-title.fleet-calculation": "Calcul de flotte",
 
+  "project-date.homologation": "Janvier 2022 - Aujourd'hui",
+  "project-date.adf": "Juillet 2021 - Juillet 2022",
+  "project-date.skeditor": "Novembre 2020 - Juillet 2021",
+  "project-date.fleet-calculation": "Septembre 2018 - Juillet 2020",
+
   "project-text.homologation": "Agile développement d'un écosystème pour soutenir et automatiser partiellement des processus de certification complexes pour les véhicules.",
   "project-text.adf": "Développement empirique d'un cadre pour la modélisation et le déploiement de configurations pour le diagnostic des données de capteurs de véhicules basé sur des microservices à l'Institut de génie logiciel et d'informatique automobile.",
   "project-text.skeditor": "Éditeur pour modéliser, spécifier et valider des graphes de compétences basés sur des grammaires. Cela comprend l'implémentation de simulations des algorithmes dans le moteur Unreal.",

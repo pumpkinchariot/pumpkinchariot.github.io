@@ -23,3 +23,29 @@
     height: 70%;
     align-self: center;
 }
+
+@media (max-width: 768px) {
+    .language-section {
+        align-self: center;
+        gap: 0.2rem;
+    }
+
+    .language-button {
+        font-size: 1.2rem;
+        background-color: var(--panel-bg);
+        border: none;
+        color: var(--panel-border);
+        font-weight: bold;
+        border-radius: 0.2rem;
+        padding: 1rem;
+    }
+
+    .language-button:hover {
+        color: var(--text-highlight);
+    }
+
+    .language-button:visited {
+        color: var(--text-highlight);
+    }
+
+}

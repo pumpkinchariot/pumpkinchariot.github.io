@@ -6,7 +6,7 @@ import "./project-component.css";
 
 interface ProjectComponentProps {
     title: React.ReactNode;
-    date: string;
+    date: React.ReactNode;
     description: React.ReactNode;
     technologies: string[];
     customStyle?: React.CSSProperties;

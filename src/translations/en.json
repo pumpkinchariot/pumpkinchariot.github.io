@@ -19,6 +19,11 @@
   "project-title.skeditor": "Skeditor",
   "project-title.fleet-calculation": "CO₂ Fleet Calculation",
 
+  "project-date.homologation": "January 2022 - Present",
+  "project-date.adf": "July 2021 - July 2022",
+  "project-date.skeditor": "November 2020 - July 2021",
+  "project-date.fleet-calculation": "September 2018 - July 2020",
+
   "project-text.homologation": "Agile development of an ecosystem for the support and partial automation of complex certification processes for vehicles.",
   "project-text.adf": "Empirical development of a framework for modeling and deploying configurations for diagnosing vehicle sensor data based on microservices at the Institut für Softwaretechnik und Fahrzeuginformatik",
   "project-text.skeditor": "Editor for modeling, specifying, and validating skill graphs based on grammars. This includes implementing simulations of algorithms in the Unreal Engine.",

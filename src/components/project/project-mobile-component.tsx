@@ -8,7 +8,7 @@ interface ProjectMobileComponent {
     customStyle?: React.CSSProperties;
 
     title: React.ReactNode;
-    date: string;
+    date: React.ReactNode;
     description: React.ReactNode;
     technologies: string[];
 }

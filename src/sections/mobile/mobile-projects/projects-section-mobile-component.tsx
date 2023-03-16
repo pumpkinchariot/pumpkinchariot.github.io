@@ -48,14 +48,14 @@ const ProjectsSectionMobileComponent = () => {
 
     return (
         <section id="projects" className={"projects-section section-container flex-column"}>
-            <SectionTitleComponent title={<FormattedMessage id="breadcrumb.projects"/>}></SectionTitleComponent>
+            <SectionTitleComponent title={<FormattedMessage id="title.projects"/>}></SectionTitleComponent>
             <div style={{width: "80%", justifyContent: "center", alignItems: "center", gap: "0.1rem"}} className={"flex-column"}>
                 <ProjectMobileComponent
                     groupId={1}
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 1}
                     title={<FormattedMessage id="project-title.homologation"/>}
-                    date={"Januar 2022 - Heute"}
+                    date={<FormattedMessage id="project-date.homologation"/>}
                     description={<FormattedMessage id="project-text.homologation"/>}
                     technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
                     customStyle={topBorder()}/>
@@ -64,7 +64,7 @@ const ProjectsSectionMobileComponent = () => {
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 2}
                     title={<FormattedMessage id="project-title.adf"/>}
-                    date={"Juli 2021 - Juli 2022"}
+                    date={<FormattedMessage id="project-date.adf"/>}
                     description={<FormattedMessage id="project-text.adf"/>}
                     technologies={["JAVA", "Python", "Amazon Web Services", "React (JavaScript, HTML, CSS)"]}
                     customStyle={intermediateBorder()}/>
@@ -73,7 +73,7 @@ const ProjectsSectionMobileComponent = () => {
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 3}
                     title={<FormattedMessage id="project-title.skeditor"/>}
-                    date={"November 2020 - Juli 2021"}
+                    date={<FormattedMessage id="project-date.skeditor"/>}
                     description={<FormattedMessage id="project-text.skeditor"/>}
                     technologies={["JAVA | Eclipse RCP", "ANTLR", "UNREAL ENGINE", "C++", "Robot Operating System (ROS)"]}
                     customStyle={intermediateBorder()}/>
@@ -82,7 +82,7 @@ const ProjectsSectionMobileComponent = () => {
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 4}
                     title={<FormattedMessage id="project-title.fleet-calculation"/>}
-                    date={"September 2018 - Juli 2020"}
+                    date={<FormattedMessage id="project-date.fleet-calculation"/>}
                     description={<FormattedMessage id="project-text.fleet-calculation"/>}
                     technologies={["JAVA | Spring Boot", "Groovy", "Hybernate", "Chromium Embedded Framework", "Angular (TypeScript, HTML, CSS)"]}
                     customStyle={bottomBorder()}/>

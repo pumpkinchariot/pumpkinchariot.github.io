@@ -17,6 +17,8 @@ import de from "translations/de.json";
 import fr from "translations/fr.json";
 import LanguageChoiceComponent from "./components/language/language-selection-component";
 import ContactButtonComponent from "./components/contact-button/contact-button-component";
+import ContactButtonMobileComponent from "./components/contact-button/contact-button-mobile-component";
+import LanguageSelectionComponent from "./components/language/language-selection-component";
 
 function App() {
     const [isMobile, setIsMobile] = useState(false);
@@ -47,13 +49,15 @@ function App() {
             <IntlProvider locale={locale} messages={messages[locale]}>
 
 
-                {isMobile ? <TopMenuComponent/> : <SideMenuComponent/>}
+                {isMobile ? <TopMenuComponent
+                                languageComponent={<LanguageSelectionComponent setLocale={setLocale}/>}
+                            /> : <SideMenuComponent/>}
 
                 <div className={"app-content flex-column"}>
                     <HomeSectionComponent
                         isLocaleFrench={locale === "fr"}
                         languageComponent={!isMobile && <LanguageChoiceComponent setLocale={setLocale}/>}
-                        contactComponent={<ContactButtonComponent/>}/>
+                        contactComponent={isMobile ? <ContactButtonMobileComponent/> : <ContactButtonComponent/>}/>
                     {/*<InterestsSectionComponent/>*/}
 
                     {isMobile ? <ProjectsSectionMobileComponent/> : <ProjectsSectionComponent/>}

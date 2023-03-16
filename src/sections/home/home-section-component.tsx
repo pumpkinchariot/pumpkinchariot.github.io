@@ -58,12 +58,17 @@ const HomeSectionComponent = (props: HomeSectionComponentProps) => {
             <div className={"home-component flex-column"}>
                 {props.languageComponent}
 
+                <div className="home-top-spacer"></div>
+
                 <div className={"greeting"}>
                     <FormattedMessage id="home.greeting"/>
                 </div>
                 <div className={"sub-text flex-row"}>
                     <FormattedMessage id="home.sub-title"/>
                 </div>
+
+                <div className="home-middle-spacer"></div>
+
                 <div className={"info-text"}>
                     <FormattedMessage id="home.info-text.p1"/>
                     <span className="tu-bs">
