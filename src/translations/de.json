@@ -1,0 +1,26 @@
+{
+    "breadcrumb.home": "Startseite",
+    "breadcrumb.experience": "ProjektErfahrung",
+    "breadcrumb.certificates": "Urkunden",
+
+    "title.projects": "ProjektErfahrung",
+    "title.portfolio": "Portfolio",
+    "title.certificates": "Urkunden",
+
+    "home.greeting": "Hi, ich bin Dibo! :)",
+    "home.sub-title": "Softwareentwicklerin aus Deutschland.",
+    "home.info-text.p1": "Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der ",
+    "home.tu-bs": "Technischen Universität Braunschweig",
+    "home.info-text.p2": " und arbeite nebenbei als Full-Stack Entwicklerin im Automobilumfeld.",
+    "home.contact-me": "schreib' mir gerne eine Nachricht!",
+
+    "project-title.homologation": "Homologation",
+    "project-title.adf": "Cloudbasiertes Diagnoseframework",
+    "project-title.skeditor": "Skeditor",
+    "project-title.fleet-calculation": "CO₂ Flottenberechnung",
+
+    "project-text.homologation": "Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zertifizierungs-prozessen von Fahrzeugen.",
+    "project-text.adf": "Empirische entwicklung eines Frameworks zum Modellieren und Deployen von Konfigurationen zur Diagnose von Fahrzeugsensordaten auf Basis von Microservices am Institut für Softwaretechnik und Fahrzeuginformatik.",
+    "project-text.skeditor": "Editor zum Modellieren, Spezifizieren und Validieren von Skillgraphen auf Basis von Grammatiken. Dazu Implementierung von Simulationen der Algorithmen in der Unreal Engine.",
+    "project-text.fleet-calculation": "Agile entwicklung einer Expertenanwendung zum Modellieren komplexer Berechnungs-Pipelines zum performanten Aggregieren immenser Datenmengen zwecks internationaler Berechnung von Fahrzeugflotten."
+}

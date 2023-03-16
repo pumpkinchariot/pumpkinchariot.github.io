@@ -1,0 +1,25 @@
+.language-section {
+    align-self: end;
+}
+
+.language-button {
+    background-color: transparent;
+    border: none;
+    color: var(--panel-border);
+    font-weight: bold;
+}
+
+.language-button:hover {
+    color: var(--text-highlight);
+}
+
+.language-button:visited {
+    color: var(--text-highlight);
+}
+
+.language-button-spacer {
+    background-color: var(--panel-border);
+    width: 0.1rem;
+    height: 70%;
+    align-self: center;
+}

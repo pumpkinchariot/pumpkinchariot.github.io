@@ -1,0 +1,28 @@
+.contact-button {
+    width: max-content;
+    font-weight: bold;
+    color: var(--text);
+    border-color: var(--text-highlight);
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.contact-button:hover {
+    color: var(--white);
+}
+
+/*.contact-button:visited {*/
+/*    color: var(--highlight);*/
+/*    background-color: var(--white);*/
+/*}*/

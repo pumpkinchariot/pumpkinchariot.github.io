@@ -12,7 +12,7 @@ function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
 
 const SideMenu = () => {
     return (
-        <div style={{position: "fixed", top: "60vh", left: "85vw", zIndex: "9999", gap: "5rem"}} className="flex-column">
+        <div style={{position: "fixed", top: "60vh", right: "2vw", zIndex: "9999", gap: "3rem"}} className="flex-column">
             <BreadCrumbsComponent></BreadCrumbsComponent>
             <SocialsComponent></SocialsComponent>
         </div>

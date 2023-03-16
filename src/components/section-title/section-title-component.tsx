@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.css";
 
 interface SectionTitleComponentProps {
-    title: string;
+    title: React.ReactNode;
 }
 
 const SectionTitleComponent = (props: SectionTitleComponentProps) => {

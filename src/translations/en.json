@@ -1,0 +1,26 @@
+{
+  "breadcrumb.home": "Home",
+  "breadcrumb.experience": "Experience",
+  "breadcrumb.certificates": "Certificates",
+
+  "title.projects": "Experience",
+  "title.portfolio": "Portfolio",
+  "title.certificates": "Certificates",
+
+  "home.greeting": "Hey there, I'm Dibo! :)",
+  "home.sub-title": "Software developer from Germany.",
+  "home.info-text.p1": "Currently, I am pursuing a part-time Master's degree in Computer Science at the ",
+  "home.tu-bs": "Technische Universität Braunschweig",
+  "home.info-text.p2": " and working as a full-stack developer in the automotive industry on the side.",
+  "home.contact-me": "feel free to contact me!",
+
+  "project-title.homologation": "Homologation Management",
+  "project-title.adf": "Cloud based Diagnostic Framework",
+  "project-title.skeditor": "Skeditor",
+  "project-title.fleet-calculation": "CO₂ Fleet Calculation",
+
+  "project-text.homologation": "Agile development of an ecosystem for the support and partial automation of complex certification processes for vehicles.",
+  "project-text.adf": "Empirical development of a framework for modeling and deploying configurations for diagnosing vehicle sensor data based on microservices at the Institut für Softwaretechnik und Fahrzeuginformatik",
+  "project-text.skeditor": "Editor for modeling, specifying, and validating skill graphs based on grammars. This includes implementing simulations of algorithms in the Unreal Engine.",
+  "project-text.fleet-calculation": "Agile development of an expert application for modeling complex calculation pipelines to efficiently aggregate vast amounts of data for international calculation of vehicle fleets."
+}

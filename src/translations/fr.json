@@ -1,0 +1,26 @@
+{
+  "breadcrumb.home": "Home",
+  "breadcrumb.experience": "Expérience",
+  "breadcrumb.certificates": "Certificats",
+
+  "title.projects": "Expérience",
+  "title.portfolio": "Portfolio",
+  "title.certificates": "Certificats",
+
+  "home.greeting": "Salut, moi c'est Dibo! :)",
+  "home.sub-title": "Développeuse de logiciels d'Allemagne.",
+  "home.info-text.p1": "Actuellement, je poursuis des études à mi-temps en informatique pour obtenir un Master à l'",
+  "home.tu-bs": "Université de technologie de Braunschweig",
+  "home.info-text.p2": ", tout en travaillant comme développeuse full-stack dans l'industrie automobile.",
+  "home.contact-me": "n'hésite pas à me contacter!",
+
+  "project-title.homologation": "Gestion de l'homologation",
+  "project-title.adf": "Cadre de diagnostic basé sur le cloud",
+  "project-title.skeditor": "Skeditor",
+  "project-title.fleet-calculation": "Calcul de flotte",
+
+  "project-text.homologation": "Agile développement d'un écosystème pour soutenir et automatiser partiellement des processus de certification complexes pour les véhicules.",
+  "project-text.adf": "Développement empirique d'un cadre pour la modélisation et le déploiement de configurations pour le diagnostic des données de capteurs de véhicules basé sur des microservices à l'Institut de génie logiciel et d'informatique automobile.",
+  "project-text.skeditor": "Éditeur pour modéliser, spécifier et valider des graphes de compétences basés sur des grammaires. Cela comprend l'implémentation de simulations des algorithmes dans le moteur Unreal.",
+  "project-text.fleet-calculation": "Développement agile d'une application experte pour modéliser des pipelines de calcul complexes afin d'agréger efficacement des quantités massives de données pour le calcul international de flottes de véhicules."
+}

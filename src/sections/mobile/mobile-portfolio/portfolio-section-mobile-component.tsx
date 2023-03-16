@@ -3,6 +3,7 @@ import SectionTitleComponent from "../../../components/section-title/section-tit
 import PortfolioItemComponent from "../../portfolio/portfolio-item-component";
 import "../../../App.css";
 import "./portfolio-section-mobile-component.css";
+import {FormattedMessage} from "react-intl";
 
 const PortfolioSectionMobileComponent = () => {
     const portfolioItemStyle = () => {
@@ -16,7 +17,7 @@ const PortfolioSectionMobileComponent = () => {
 
     return (
         <section id="portfolio" style={{alignItems: "center"}} className={"portfolio-section section-container flex-column"}>
-            <SectionTitleComponent title="Portfolio"></SectionTitleComponent>
+            <SectionTitleComponent title={<FormattedMessage id="breadcrumb.portfolio"/>}></SectionTitleComponent>
             <PortfolioItemComponent
                 title="Simutales"
                 imgPath={"../../simutales.png"}

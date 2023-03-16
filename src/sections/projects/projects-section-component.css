@@ -1,0 +1,28 @@
+.arrow {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 50px solid var(--panel-bg);
+    border-bottom: 30px solid transparent;
+}
+
+.arrow-line {
+    align-items: center;
+    height: 30px;
+    width: 74%;
+    background-color: var(--panel-bg);
+    border-radius: 0rem 0.4rem 0.4rem 0rem;
+    justify-content: center;
+}
+
+.arrow-date {
+    font-size: 0.8rem;
+    width: 24%;
+    font-weight: bold;
+}

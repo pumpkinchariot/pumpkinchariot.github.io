@@ -3,7 +3,7 @@ import "./bread-crumb-component.css";
 
 interface BreadCrumbComponentProps {
     sectionId: string;
-    title: string;
+    title: React.ReactNode;
 }
 const BreadCrumbComponent = (props: BreadCrumbComponentProps) => {
     return(

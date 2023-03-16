@@ -1,3 +1,11 @@
 .colored-divider {
     background-color: var(--highlight) !important;
 }
+
+.project-date {
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: var(--panel-bg);
+    color: #8476b3a6;
+    padding: 0.2rem 0.2rem;
+}

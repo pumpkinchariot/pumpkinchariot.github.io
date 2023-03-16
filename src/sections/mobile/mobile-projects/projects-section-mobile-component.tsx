@@ -4,6 +4,7 @@ import SectionTitleComponent from "../../../components/section-title/section-tit
 import "../../../App.css";
 import "./projects-section-mobile-component.css";
 import ProjectMobileComponent from "../../../components/project/project-mobile-component";
+import {FormattedMessage} from "react-intl";
 
 const ProjectsSectionMobileComponent = () => {
 
@@ -47,63 +48,42 @@ const ProjectsSectionMobileComponent = () => {
 
     return (
         <section id="projects" className={"projects-section section-container flex-column"}>
-            <SectionTitleComponent title="ProjektErfahrung"></SectionTitleComponent>
+            <SectionTitleComponent title={<FormattedMessage id="breadcrumb.projects"/>}></SectionTitleComponent>
             <div style={{width: "80%", justifyContent: "center", alignItems: "center", gap: "0.1rem"}} className={"flex-column"}>
-{/*                <ProjectComponent title={"Homologations Management"}
-                                  date={"Januar 2022 - Heute"}
-                                  description={"Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zulassungs- und Zertifizierungsprozessen von Fahrzeugen."}
-                                  technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
-                                  customStyle={projectComponentStyle()}/>*/}
-                {/*<ProjectComponent title={"Cloudbasiertes Diagnose Framework"}*/}
-                {/*                  date={"Juli 2021 - Juli 2022"}*/}
-                {/*                  description={"Empirische entwicklung eines Frameworks zum Modellieren und Deployen von Konfigurationen zur Diagnose von Fahrzeugsensordaten auf Basis von Microservices am Institut für Softwaretechnik und Fahrzeuginformatik."}*/}
-                {/*                  technologies={["JAVA", "Python", "Amazon Web Services", "React (JavaScript, HTML, CSS)"]}*/}
-                {/*                  customStyle={projectComponentStyle()}/>*/}
-                {/*<ProjectComponent title={"Skillgraphen"}*/}
-                {/*                  date={"November 2020 - Juli 2021"}*/}
-                {/*                  description={"Editor zum Modellieren, Spezifizieren und validieren von Skillgraphen auf Basis von Grammatiken. Simulation der Algorithmen in der Unreal Engine. Cyberphysische Systeme."}*/}
-                {/*                  technologies={["JAVA | Eclipse RCP", "ANTLR", "UNREAL ENGINE", "C++"]}*/}
-                {/*                  customStyle={projectComponentStyle()}/>*/}
-                {/*<ProjectComponent title={"CO₂ Flottenberechnung"}*/}
-                {/*                  date={"September 2018 - Juli 2020"}*/}
-                {/*                  description={"Agile entwicklung einer Expertenanwendung zum Modellieren komplexer Berechnungs-Pipelines zum performanten Aggregieren immenser Datenmengen (Tabellen mit mehreren Millionen Datenzeilen) für die internationale Berechnung von Fahrzeugflotten."}*/}
-                {/*                  technologies={["JAVA | Spring Boot", "Groovy", "Hybernate", "Chromium Embedded Framework", "Angular (TypeScript, HTML, CSS)"]}*/}
-                {/*                  customStyle={projectComponentStyle()}/>*/}
-
                 <ProjectMobileComponent
                     groupId={1}
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 1}
-                    title={"Homologations Management"}
+                    title={<FormattedMessage id="project-title.homologation"/>}
                     date={"Januar 2022 - Heute"}
-                    description={"Agile Entwicklung eines Ökosystems für die Unterstützung und Teilautomatisierung komplexer Zulassungs- und Zertifizierungsprozessen von Fahrzeugen."}
+                    description={<FormattedMessage id="project-text.homologation"/>}
                     technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
                     customStyle={topBorder()}/>
                 <ProjectMobileComponent
                     groupId={2}
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 2}
-                    title={"Cloudbasiertes Diagnose Framework"}
+                    title={<FormattedMessage id="project-title.adf"/>}
                     date={"Juli 2021 - Juli 2022"}
-                    description={"Empirische entwicklung eines Frameworks zum Modellieren und Deployen von Konfigurationen zur Diagnose von Fahrzeugsensordaten auf Basis von Microservices am Institut für Softwaretechnik und Fahrzeuginformatik."}
+                    description={<FormattedMessage id="project-text.adf"/>}
                     technologies={["JAVA", "Python", "Amazon Web Services", "React (JavaScript, HTML, CSS)"]}
                     customStyle={intermediateBorder()}/>
                 <ProjectMobileComponent
                     groupId={3}
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 3}
-                    title={"Skillgraphen"}
+                    title={<FormattedMessage id="project-title.skeditor"/>}
                     date={"November 2020 - Juli 2021"}
-                    description={"Editor zum Modellieren, Spezifizieren und validieren von Skillgraphen auf Basis von Grammatiken. Simulation der Algorithmen in der Unreal Engine. Cyberphysische Systeme."}
-                    technologies={["JAVA | Eclipse RCP", "ANTLR", "UNREAL ENGINE", "C++"]}
+                    description={<FormattedMessage id="project-text.skeditor"/>}
+                    technologies={["JAVA | Eclipse RCP", "ANTLR", "UNREAL ENGINE", "C++", "Robot Operating System (ROS)"]}
                     customStyle={intermediateBorder()}/>
                 <ProjectMobileComponent
                     groupId={4}
                     setSelectedGroupId={setSelectedProject}
                     renderContent={selectedProject === 4}
-                    title={"CO₂ Flottenberechnung"}
+                    title={<FormattedMessage id="project-title.fleet-calculation"/>}
                     date={"September 2018 - Juli 2020"}
-                    description={"Agile entwicklung einer Expertenanwendung zum Modellieren komplexer Berechnungs-Pipelines zum performanten Aggregieren immenser Datenmengen (Tabellen mit mehreren Millionen Datenzeilen) für die internationale Berechnung von Fahrzeugflotten."}
+                    description={<FormattedMessage id="project-text.fleet-calculation"/>}
                     technologies={["JAVA | Spring Boot", "Groovy", "Hybernate", "Chromium Embedded Framework", "Angular (TypeScript, HTML, CSS)"]}
                     customStyle={bottomBorder()}/>
             </div>

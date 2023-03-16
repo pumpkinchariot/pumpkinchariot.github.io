@@ -6,7 +6,12 @@
     min-height: 100vh;
 }
 
+.home-component {
+    margin-top: 0.2rem;
+}
+
 .greeting {
+    margin-top: 12rem;
     font-weight: bold;
     font-size: 4rem;
     color: var(--text-highlight);
@@ -15,7 +20,7 @@
     animation-duration: 4s;
 }
 
-.landing-text {
+.sub-text {
     text-align: left;
     font-size: 2.2rem;
 
@@ -41,17 +46,14 @@
     animation-fill-mode: forwards;
 }
 
-.contact-button {
-    background-color: #16141d !important;
-    margin-top: 1rem !important;
-    width: 10vw !important;
-    align-self: flex-start !important;
+.tu-bs {
+    color: var(--tu-red);
+    white-space: nowrap;
+    font-weight: bold;
+}
 
-    opacity: 0;
-    animation-name: fade-in;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+.tu-bs:hover {
+    color: var(--white);
 }
 
 @media (max-width: 768px) {

@@ -9,7 +9,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+      {/*<IntlProvider locale={locale} messages={intl}>*/}
+
     <App />
+      {/*</IntlProvider>*/}
   </React.StrictMode>
 );
 

@@ -11,10 +11,22 @@ import TopMenuComponent from "./sections/mobile/top-menu/top-menu-component";
 import ProjectsSectionMobileComponent
     from "./sections/mobile/mobile-projects/projects-section-mobile-component";
 import PortfolioSectionMobileComponent from "./sections/mobile/mobile-portfolio/portfolio-section-mobile-component";
+import {IntlProvider} from "react-intl";
+import en from "translations/en.json";
+import de from "translations/de.json";
+import fr from "translations/fr.json";
+import LanguageChoiceComponent from "./components/language/language-selection-component";
+import ContactButtonComponent from "./components/contact-button/contact-button-component";
 
 function App() {
     const [isMobile, setIsMobile] = useState(false);
+    const [locale, setLocale] = useState('en');
 
+    const messages: any = {
+        en: en,
+        de: de,
+        fr: fr
+    };
 
     useEffect(() => {
         const handleResize = () => {
@@ -29,30 +41,35 @@ function App() {
 
     return (
         <head className={"app flex-column"}>
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"></link>
+            <IntlProvider locale={locale} messages={messages[locale]}>
 
-            {isMobile ? <TopMenuComponent/> : <SideMenuComponent/>}
 
-            <div className={"app-content flex-column"}>
-                <HomeSectionComponent>
-                    <InfoComponent/>
-                </HomeSectionComponent>
-                {/*<InterestsSectionComponent/>*/}
+                {isMobile ? <TopMenuComponent/> : <SideMenuComponent/>}
 
-                {isMobile ? <ProjectsSectionMobileComponent/> : <ProjectsSectionComponent/>}
-                {/*{isMobile ? <PortfolioSectionMobileComponent/> : <PortfolioSectionComponent/>}*/}
+                <div className={"app-content flex-column"}>
+                    <HomeSectionComponent
+                        isLocaleFrench={locale === "fr"}
+                        languageComponent={!isMobile && <LanguageChoiceComponent setLocale={setLocale}/>}
+                        contactComponent={<ContactButtonComponent/>}/>
+                    {/*<InterestsSectionComponent/>*/}
 
-                <CertificatesSectionComponent></CertificatesSectionComponent>
+                    {isMobile ? <ProjectsSectionMobileComponent/> : <ProjectsSectionComponent/>}
+                    {/*{isMobile ? <PortfolioSectionMobileComponent/> : <PortfolioSectionComponent/>}*/}
 
-                <div className={"footer-container"} style={{padding: "5rem 0rem 5rem 0rem"}}>
+                    <CertificatesSectionComponent></CertificatesSectionComponent>
 
-                    Built and designed by Dibo Gonda.
-                    <br></br>
-                    All rights reserved. ©
+                    <div className={"footer-container"} style={{padding: "5rem 0rem 5rem 0rem"}}>
+
+                        Built and designed by Dibo Gonda.
+                        <br></br>
+                        All rights reserved. ©
+                    </div>
                 </div>
-            </div>
+            </IntlProvider>
+
         </head>
     );
 }

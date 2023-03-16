@@ -1,20 +1,19 @@
 import {Avatar, Button} from "@mui/material";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import React from "react";
+import React, {ReactNode} from "react";
 import {styled} from '@mui/material/styles';
 import Tooltip, {TooltipProps, tooltipClasses} from '@mui/material/Tooltip';
-
-
+import TuBsChipComponent from "../../components/tu-bs-chip/tu-bs-chip-component";
+import {FormattedMessage} from "react-intl";
 import "./home-section-component.css";
 import "../../animations.css";
-import LanguageChoiceComponent from "../../components/language/language-choice-component";
-import TuBsChipComponent from "../../components/tu-bs-chip/tu-bs-chip-component";
 
-interface LandingComponentProps {
-    children?: React.ReactNode;
+interface HomeSectionComponentProps {
+    isLocaleFrench: boolean;
+    languageComponent: ReactNode;
+    contactComponent: ReactNode;
 }
 
-const HomeSectionComponent = (props: LandingComponentProps) => {
+const HomeSectionComponent = (props: HomeSectionComponentProps) => {
 
     const CustomTooltip = styled(({className, ...props}: TooltipProps) => (
         <Tooltip {...props} classes={{popper: className}}/>
@@ -55,49 +54,27 @@ const HomeSectionComponent = (props: LandingComponentProps) => {
     }
 
     return (
-        <section id="home" className={"section-container home-container flex-column"}
-                 style={{justifyContent: "center"}}>
-            {/*<LanguageChoiceComponent></LanguageChoiceComponent>*/}
-            <div className={"landing-component flex-column"}>
+        <section id="home" className={"section-container home-container flex-column"}>
+            <div className={"home-component flex-column"}>
+                {props.languageComponent}
+
                 <div className={"greeting"}>
-                    <span style={{fontSize: "2rem"}}></span>Hi, ich bin Dibo! :)
+                    <FormattedMessage id="home.greeting"/>
                 </div>
-                <div className={"landing-text flex-row"}>
-                    {/*<div style={{height: "80%", width: "3px", backgroundColor: "#6359852e"}}>*/}
-
-                    {/*</div>*/}
-
-
-                    {/*ich bin <Tooltip arrow*/}
-                    {/*                 title={meTooltip()}><span*/}
-                    {/*style={{color: "var(--text-highlight)"}}>Dibo</span></Tooltip>,*/}
-                    Software Entwicklerin aus Deutschland.
-                    {/*<CustomTooltip placement="top-end" arrow title={locationTooltip()}><span*/}
-                    {/*style={{color: "var(--text-highlight)", verticalAlign: "baseline"}}>Deutschland.*/}
-                    {/*/!*<LocationOnIcon sx={{fontSize: 40}}/>*!/*/}
-                    {/*</span></CustomTooltip>*/}
+                <div className={"sub-text flex-row"}>
+                    <FormattedMessage id="home.sub-title"/>
                 </div>
                 <div className={"info-text"}>
-                    <span>
-                        Derzeit absolviere ich ein Halbtagsstudium im Masterstudiengang Informatik an der&nbsp;
+                    <FormattedMessage id="home.info-text.p1"/>
+                    <span className="tu-bs">
+                        <FormattedMessage id="home.tu-bs"/>
                     </span>
-                    <span>
-                        <TuBsChipComponent/>&nbsp;
-                    </span>
-                    <span>
-                        und arbeite nebenbei als Full-Stack Entwicklerin im Automobilumfeld.
-                    </span>
+                    <FormattedMessage id="home.info-text.p2"/>
                 </div>
 
-                <Button className="contact-button" style={{width: "100%", alignSelf: "center", height: "48px", backgroundColor: "#1d1a25", borderRadius: "8px"}} variant="contained">Kontakt</Button>
+                {props.contactComponent}
 
             </div>
-
-
-            {/*{props.children}*/}
-            {/*<div style={{borderRadius: "10%", color: "var(--text)", borderColor: "var(--highlight)", width: "2%", padding: "4rem", fontSize: "1.4rem", border: "dotted 2px"}}>*/}
-            {/*    Kontakt aufnehmen*/}
-            {/*</div>*/}
         </section>
     );
 }

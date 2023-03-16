@@ -7,9 +7,9 @@ interface ProjectMobileComponent {
     renderContent?: boolean;
     customStyle?: React.CSSProperties;
 
-    title: string;
+    title: React.ReactNode;
     date: string;
-    description: string;
+    description: React.ReactNode;
     technologies: string[];
 }
 

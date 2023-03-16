@@ -14,5 +14,6 @@
     background-color: var(--text-highlight);
     height: 50vh;
     width: 1px;
-    align-self: center;
+    align-self: end;
+    margin-right: 0.7rem;
 }

@@ -9,7 +9,7 @@ import SocialLinkComponent from "./social-link-component";
 
 const SocialsComponent = () => {
     return (
-        <div className={"flex-column"} style={{alignItems: "center", gap: "0.6rem"}}>
+        <div className={"flex-column"} style={{alignItems: "end", gap: "0.6rem", marginRight: "0.2rem"}}>
             <SocialLinkComponent link={"https://github.com/pumpkinchariot"}>
                 <GitHubIcon className="social-icon"></GitHubIcon>
             </SocialLinkComponent>
