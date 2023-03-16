@@ -30,16 +30,16 @@ const ProjectsSectionComponent = () => {
                 </div>
                 <div className="arrow-line flex-row">
                     <div className="arrow-date">
-                        Januar 2022 - Heute
+                        <FormattedMessage id="project-date.homologation"/>
                     </div>
                     <div className="arrow-date">
-                        Juli 2021 - Juli 2022
+                        <FormattedMessage id="project-date.adf"/>
                     </div>
                     <div className="arrow-date">
-                        November 2020 - Juli 2021
+                        <FormattedMessage id="project-date.skeditor"/>
                     </div>
                     <div className="arrow-date">
-                        September 2018 - Juli 2020
+                        <FormattedMessage id="project-date.fleet-calculation"/>
                     </div>
                 </div>
             </div>
@@ -47,50 +47,24 @@ const ProjectsSectionComponent = () => {
             <div style={{justifyContent: "center", alignItems: "baseline", marginLeft: "50px", width: "74%"}}
                  className={"flex-row"}>
                 <ProjectComponent title={<FormattedMessage id="project-title.homologation"/>}
-                                  date={<FormattedMessage id="project-date.homologation"/>}
                                   description={<FormattedMessage id="project-text.homologation"/>}
                                   technologies={["JAVA | Spring Boot", "MariaDB", "React (TypeScript, HTML, CSS)"]}
                                   customStyle={projectComponentStyle()}/>
                 <ProjectComponent title={<FormattedMessage id="project-title.adf"/>}
-                                  date={<FormattedMessage id="project-date.adf"/>}
                                   description={<FormattedMessage id="project-text.adf"/>}
                                   technologies={["JAVA", "Python", "Amazon Web Services", "React (JavaScript, HTML, CSS)"]}
                                   customStyle={projectComponentStyle()}>
-                    {/*<Divider variant="inset"*/}
-                    {/*         style={{*/}
-                    {/*             backgroundColor: "var(--panel-border)",*/}
-                    {/*             margin: "0rem",*/}
-                    {/*             padding: "0rem",*/}
-                    {/*             width: "100%"*/}
-                    {/*         }}/>*/}
                 </ProjectComponent>
                 <ProjectComponent title={<FormattedMessage id="project-title.skeditor"/>}
-                                  date={<FormattedMessage id="project-date.skeditor"/>}
                                   description={<FormattedMessage id="project-text.skeditor"/>}
                                   technologies={["JAVA | Eclipse RCP", "ANTLR", "UNREAL ENGINE", "C++", "Robot Operating System (ROS)"]}
                                   customStyle={projectComponentStyle()}>
-                    {/*<Divider variant="inset"*/}
-                    {/*         style={{*/}
-                    {/*             backgroundColor: "var(--panel-border)",*/}
-                    {/*             margin: "0rem",*/}
-                    {/*             padding: "0rem",*/}
-                    {/*             width: "100%"*/}
-                    {/*         }}/>*/}
                 </ProjectComponent>
 
                 <ProjectComponent title={<FormattedMessage id="project-title.fleet-calculation"/>}
-                                  date={<FormattedMessage id="project-date.fleet-calculation"/>}
                                   description={<FormattedMessage id="project-text.fleet-calculation"/>}
                                   technologies={["JAVA | Spring Boot", "Groovy", "Hybernate", "Chromium Embedded Framework", "Angular (TypeScript, HTML, CSS)"]}
                                   customStyle={projectComponentStyle()}>
-                    {/*<Divider variant="inset"*/}
-
-                    {/*         style={{*/}
-                    {/*             backgroundColor: "var(--panel-border)",*/}
-                    {/*             margin: "0rem",*/}
-                    {/*             padding: "0rem",*/}
-                    {/*             width: "100%"*/}
-                    {/*         }}/>*/}
                 </ProjectComponent>
 
 
