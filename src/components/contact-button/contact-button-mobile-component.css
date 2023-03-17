@@ -7,8 +7,7 @@
     font-weight: bold;
     font-size: 1.2rem;
     /*outline: 1px solid var(--panel-border);*/
-    width: 100%;
-    align-self: center;
+    text-align: center;
 
     opacity: 0;
     animation-name: fade-in;

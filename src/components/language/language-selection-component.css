@@ -38,6 +38,7 @@
         font-weight: bold;
         border-radius: 0.2rem;
         padding: 1rem;
+        width: 30vw;
     }
 
     .language-button:hover {

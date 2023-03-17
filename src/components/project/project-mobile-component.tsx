@@ -22,10 +22,10 @@ const ProjectMobileComponent = (props: ProjectMobileComponent) => {
 
     return (
         <button className={`${props.renderContent ? 'active-panel-section' : ''} panel-section flex-column`} style={props.customStyle} onClick={() => props.setSelectedGroupId(props.groupId)}>
-            <div style={{fontWeight: "bold", color: "var(--highlight)", alignSelf: "center"}}>
+            <div style={{color: "var(--highlight)", alignSelf: "center", fontFamily: "Source Code Pro", fontSize: "0.8"}}>
                 {props.date}
             </div>
-            <div style={{color: "var(--text-highlight)", alignSelf: "center"}}>
+            <div style={{color: "var(--text-highlight)", alignSelf: "center", fontWeight: "bold", fontSize: "1.2"}}>
                 {props.title}
             </div>
             {props.renderContent &&
