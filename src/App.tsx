@@ -39,14 +39,8 @@ function App() {
     }, []);
 
     return (
-        <head className={"app flex-column"}>
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-            <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"></link>
-
+        <div className={"app flex-column"}>
             <IntlProvider locale={locale} messages={messages[locale]}>
-
-
                 {isMobile ? <TopMenuComponent
                                 languageComponent={<LanguageSelectionComponent setLocale={setLocale}/>}
                             /> : <SideMenuComponent/>}
@@ -59,12 +53,9 @@ function App() {
                     {/*<InterestsSectionComponent/>*/}
 
                     {isMobile ? <ProjectsSectionMobileComponent/> : <ProjectsSectionComponent/>}
-                    {/*{isMobile ? <PortfolioSectionMobileComponent/> : <PortfolioSectionComponent/>}*/}
-
                     <CertificatesSectionComponent></CertificatesSectionComponent>
 
-                    <div className={"footer-container"} style={{padding: "5rem 0rem 5rem 0rem"}}>
-
+                    <div className="footer-container">
                         Built and designed by Dibo Gonda.
                         <br></br>
                         All rights reserved. ©
@@ -72,7 +63,7 @@ function App() {
                 </div>
             </IntlProvider>
 
-        </head>
+        </div>
     );
 }
 
