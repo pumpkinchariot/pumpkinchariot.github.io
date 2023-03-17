@@ -1,16 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import './App.css';
-import PortfolioSectionComponent from "./sections/portfolio/portfolio-section-component";
 import ProjectsSectionComponent from "./sections/projects/projects-section-component";
-import InterestsSectionComponent from "./sections/interests/interests-section-component";
 import HomeSectionComponent from "./sections/home/home-section-component";
-import InfoComponent from "./sections/home/info-component";
 import CertificatesSectionComponent from "./sections/certifactes/certificates-section-component";
 import SideMenuComponent from "./sections/side-menu/side-menu";
 import TopMenuComponent from "./sections/mobile/top-menu/top-menu-component";
 import ProjectsSectionMobileComponent
     from "./sections/mobile/mobile-projects/projects-section-mobile-component";
-import PortfolioSectionMobileComponent from "./sections/mobile/mobile-portfolio/portfolio-section-mobile-component";
 import {IntlProvider} from "react-intl";
 import en from "translations/en.json";
 import de from "translations/de.json";
@@ -19,6 +14,8 @@ import LanguageChoiceComponent from "./components/language/language-selection-co
 import ContactButtonComponent from "./components/contact-button/contact-button-component";
 import ContactButtonMobileComponent from "./components/contact-button/contact-button-mobile-component";
 import LanguageSelectionComponent from "./components/language/language-selection-component";
+
+import './App.css';
 
 function App() {
     const [isMobile, setIsMobile] = useState(false);
@@ -46,6 +43,7 @@ function App() {
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"></link>
+
             <IntlProvider locale={locale} messages={messages[locale]}>
 
 
