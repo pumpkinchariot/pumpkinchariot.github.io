@@ -11,7 +11,7 @@ const TuBsChipComponent = (props: TuBsChipComponentProps) => {
     return (
         <a href="https://www.tu-braunschweig.de/">
         <span className="tu-chip">
-            {/*<img id={"tu-icon"} src={require("../../tu_wappen.jpg")}></img>*/}
+            {/*<img id={"tu-icon"} src={require("../../tu_symbol.jpg")}></img>*/}
             <FormattedMessage id="home.tu-bs"/>
         </span>
         </a>

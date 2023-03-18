@@ -11,7 +11,7 @@ const CertificatesSectionComponent = () => {
             <SectionTitleComponent title={<FormattedMessage id="title.certificates"/>}></SectionTitleComponent>
             <InfoPanelComponent customStyle={{width: "60%"}}>
                 <div className={"flex-row"} style={{gap: "1rem"}}>
-                    <img id="scrum-img" src={require("../../scrum.png")}></img>
+                    <img id="scrum-img" src={require("../../assets/scrum.png")}></img>
                 </div>
             </InfoPanelComponent>
         </section>

@@ -24,7 +24,7 @@ const PortfolioItemComponent = (props: PortfolioItemComponent) => {
         <div style={props.customStyle} className={"flex-column"}>
             <InfoPanelComponent>
                 {/*Render Preview here!*/}
-                <img src={require("../../simutales.png")}
+                <img src={require("../../assets/simutales.png")}
                      style={{width: "100%", borderRadius: "0.8rem", border: "1px white solid"}}></img>
             </InfoPanelComponent>
 

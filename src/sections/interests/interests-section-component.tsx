@@ -50,7 +50,7 @@ const InterestsSectionComponent = () => {
                 padding: "2rem"
             }}>
                 <Avatar alt="Remy Sharp"
-                        src={require("../../dibo_2.jpg")}
+                        src={require("../../assets/dibo_2.jpg")}
                         sx={{width: 50, height: 50}}
                         variant="rounded"
                         style={{border: "2px var(--avatar-pink) solid", alignSelf: "baseline"}}/>
