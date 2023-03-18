@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.39752562.css",
-    "main.js": "/static/js/main.2622dbd6.js",
+    "main.js": "/static/js/main.9f3caeb4.js",
     "static/js/787.21018835.chunk.js": "/static/js/787.21018835.chunk.js",
     "static/media/scrum.png": "/static/media/scrum.a9c0fb316d9fe2a45226.png",
     "index.html": "/index.html",
     "main.39752562.css.map": "/static/css/main.39752562.css.map",
-    "main.2622dbd6.js.map": "/static/js/main.2622dbd6.js.map",
+    "main.9f3caeb4.js.map": "/static/js/main.9f3caeb4.js.map",
     "787.21018835.chunk.js.map": "/static/js/787.21018835.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39752562.css",
-    "static/js/main.2622dbd6.js"
+    "static/js/main.9f3caeb4.js"
   ]
 }
