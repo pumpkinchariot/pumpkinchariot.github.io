@@ -26,6 +26,6 @@
 
   "project-text.homologation": "Agile développement d'un écosystème pour soutenir et automatiser partiellement des processus de certification complexes pour les véhicules.",
   "project-text.adf": "Développement empirique d'un cadre pour la modélisation et le déploiement de configurations pour le diagnostic des données de capteurs de véhicules basé sur des microservices à l'Institut de génie logiciel et d'informatique automobile.",
-  "project-text.skeditor": "Éditeur pour modéliser, spécifier et valider des graphes de compétences basés sur des grammaires. Cela comprend l'implémentation de simulations des algorithmes dans le moteur Unreal.",
+  "project-text.skeditor": "Éditeur pour modéliser, spécifier et valider des graphes de compétences basés sur des grammaires. Cela comprend l'implémentation de simulations des algorithmes dans l'Unreal Engine",
   "project-text.fleet-calculation": "Développement agile d'une application experte pour modéliser des pipelines de calcul complexes afin d'agréger efficacement des quantités massives de données pour le calcul international de flottes de véhicules."
 }
