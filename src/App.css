@@ -56,6 +56,10 @@ a {
     margin: 6rem;
 }
 
+.footer-container {
+    padding: 5rem 0rem 5rem 0rem;
+}
+
 @media (max-width: 768px) {
     .app-content {
         gap: 0rem;
