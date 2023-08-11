@@ -13,7 +13,7 @@ const BreadCrumbsComponent = () => {
             alignItems: "end"
         }}>
             <BreadCrumbComponent sectionId="#home" title={<FormattedMessage id="breadcrumb.home"/>}/>
-            {/*<BreadCrumbComponent sectionID="#interests" title={"Interessen"}></BreadCrumbComponent>*/}
+            <BreadCrumbComponent sectionId="#interests" title={<FormattedMessage id="breadcrumb.interests"/>}/>
             <BreadCrumbComponent sectionId="#projects" title={<FormattedMessage id="breadcrumb.experience"/>}/>
             {/*<BreadCrumbComponent sectionId="#portfolio" title={"Portfolio"}></BreadCrumbComponent>*/}
             <BreadCrumbComponent sectionId="#certificates" title={<FormattedMessage id="breadcrumb.certificates"/>}/>

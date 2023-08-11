@@ -1,8 +1,10 @@
 {
     "breadcrumb.home": "Startseite",
+    "breadcrumb.interests": "Interessen",
     "breadcrumb.experience": "ProjektErfahrung",
     "breadcrumb.certificates": "Urkunden",
 
+    "title.interests": "Interessen",
     "title.projects": "ProjektErfahrung",
     "title.portfolio": "Portfolio",
     "title.certificates": "Urkunden",

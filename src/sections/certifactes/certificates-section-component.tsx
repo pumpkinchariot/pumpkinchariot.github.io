@@ -7,7 +7,7 @@ import {FormattedMessage} from "react-intl";
 
 const CertificatesSectionComponent = () => {
     return (
-        <section id="certificates" className={"certificates-section section-container flex-column"}>
+        <section id="certificates" className={"certificates-section section-container flex-column"} style={{alignItems: "center"}}>
             <SectionTitleComponent title={<FormattedMessage id="title.certificates"/>}></SectionTitleComponent>
             <InfoPanelComponent customStyle={{width: "60%"}}>
                 <div className={"flex-row"} style={{gap: "1rem"}}>

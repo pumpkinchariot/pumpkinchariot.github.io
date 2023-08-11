@@ -8,7 +8,6 @@ const ContactButtonComponent = () => {
             <a href="mailto:ldm.gonda@gmail.com">
                 <div className="contact-button">
                     <FormattedMessage id="home.contact-me" />
-                    {/*<EmailOutlinedIcon></EmailOutlinedIcon>*/}
                 </div>
             </a>
         </div>

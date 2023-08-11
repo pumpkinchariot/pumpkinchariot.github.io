@@ -1,90 +1,214 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import InfoPanelComponent from "../../components/info-panel/info-panel-component";
-import {Avatar} from "@mui/material";
-import SectionTitleComponent from "../../components/section-title/section-title-component";
+import "./interests-section-component.css";
+import {FormattedMessage} from "react-intl";
 
-const InterestsSectionComponent = () => {
+interface InterestsSectionComponentProps {
+    scrollValue: number;
+}
 
-    const generateSkillTree = () => {
-        const divs = [];
-        // for (let i = 0; i < 5; i++) {
-        //     const rot = "rotate(" + (i * 45) + "deg)";
-        //     divs.push(<div key={i} style={{transform: rot, height: "40px", backgroundColor: "white", width: "3px"}}></div>);
-        // }
-        let rot = "rotate(" + 45 + "deg)";
-        divs.push(
-            <div className="flex-column" style={{width: "60px"}}>
-                <div key={1} style={{transform: rot, height: "80px", backgroundColor: "white", width: "1px"}}></div>
-                <div style={{border: "1px solid white", borderRadius: "0.5rem", padding: "1rem", width: "60px"}} className="flex-column">
-                    Fullstack Dev
-                </div>
-            </div>
-        );
-        rot = "rotate(" + -45 + "deg)";
-        divs.push(<div key={2} style={{transform: rot, height: "80px", backgroundColor: "white", width: "1px"}}></div>);
+const InterestsSectionComponent = (props: InterestsSectionComponentProps) => {
+    const [seedOpacityValue, setSeedOpacityValue] = useState(0);
+    const [seedRotationValue, setRotationValue] = useState(0)
+
+    const [treeOpacityValue, setTreeOpacityValue] = useState(0);
+
+    const [pathArray, setPathArray] = useState<any>([]);
+
+    const [show, setShow] = useState(true);
+
+    const backgroundStyle = {};
+
+    useEffect(() => {
+
+    }, [pathArray]); // Beim ersten Rendern die Zustandsvariable auf true setzen
 
 
+    useEffect(() => {
+        setRotationValue(props.scrollValue - 250)
 
-        return(
-            <div>
-                <div style={{border: "1px solid white", borderRadius: "0.5rem"}} className="flex-column">
-                    Interessen
-                </div>
-                <div style={{gap: "4rem"}} className={"flex-row"}>
-                    {divs}
-                </div>
-            </div>
-        );
+        setTreeOpacityValue((props.scrollValue) / 600)
+        if (props.scrollValue > 1000) {
+            let opacity = treeOpacityValue / (props.scrollValue / 1000);
+            setTreeOpacityValue(opacity > 0.05 ? opacity : 0.05)
+        }
+
+
+        let it = parseInt((props.scrollValue / 70).toString(), 10);
+        it = it > 8 ? 8 : it;
+
+
+        setPathArray([
+            ...generateTrapez(800, 800, 120, 200, 0, 10, it < 0 ? 0 : it)
+        ]);
+    }, [props.scrollValue]);
+
+
+    function rotatePoint(pointX: number, pointY: number, anchorX: number, anchorY: number, angle: number): [number, number] {
+        // Umrechnung des Winkels in Radianten
+        const radians = (angle * Math.PI) / 180;
+
+        // Verschiebung des Punktes, um den Ankerpunkt zum Ursprung zu machen
+        const shiftedX = pointX - anchorX;
+        const shiftedY = pointY - anchorY;
+
+        // Rotation des verschobenen Punktes um den Ursprung
+        const rotatedX = shiftedX * Math.cos(radians) - shiftedY * Math.sin(radians);
+        const rotatedY = shiftedX * Math.sin(radians) + shiftedY * Math.cos(radians);
+
+        // Rückverschiebung des rotierten Punktes zum ursprünglichen Koordinatensystem
+        const finalX = rotatedX + anchorX;
+        const finalY = rotatedY + anchorY;
+
+        return [finalX, finalY];
     }
 
-    return(
-        <section id="interests" style={{width: "100%", alignSelf: "center"}} className={"section-container flex-column"}>
-            {generateSkillTree()}
+    function generateTrapez(positionX: number, positionY: number, width: number, height: number, angle: number, angleDelta: number, iterations: number): any {
+        if (iterations <= 0) {
+            return [];
+        }
 
-            <SectionTitleComponent title="Interessen"></SectionTitleComponent>
+        // Berechnung der Koordinaten des Trapezes
+        const x1 = positionX - width / 2.2;
+        const y1 = positionY;
 
-            <div style={{
-                fontSize: "1.8rem",
-                border: "1px var(--highlight) solid",
-                borderRadius: "1rem",
-                padding: "2rem"
-            }}>
-                <Avatar alt="Remy Sharp"
-                        src={require("../../assets/dibo_2.jpg")}
-                        sx={{width: 50, height: 50}}
-                        variant="rounded"
-                        style={{border: "2px var(--avatar-pink) solid", alignSelf: "baseline"}}/>
-                <ul style={{
-                    listStyle: "none",
-                    margin: "0rem",
-                    padding: "0rem",
-                    gap: "1rem"
-                }}
-                    className={"flex-column"}
-                >
-                    <div>Lisa Dibo Marie Gonda</div>
-                    <div>Bachelor of Science</div>
+        const x2 = positionX + width / 2.2;
+        const y2 = positionY;
+
+        const x3 = positionX - (width * 0.5) / 2;
+        const y3 = positionY - height;
+
+        const x4 = positionX + (width * 0.5) / 2;
+        const y4 = positionY - height;
+
+        // Erstellung des SVG-Pfades für das Trapez
+        const path = `M ${x1},${y1} L ${x2},${y2} L ${x4},${y4} L ${x3},${y3} Z`;
+
+        const nextPosX = positionX
+        const nextPosY = y4
+
+        const anchor = [positionX, positionY]
+        const rotatedPos = rotatePoint(nextPosX, nextPosY, anchor[0], anchor[1], angle)
+
+        const newDelta = angleDelta / 2
+
+        const center = [positionX, positionY - height / 2]
+        const rotatedCenter = rotatePoint(center[0], center[1], anchor[0], anchor[1], angle)
 
 
-                    Interessen
-                    <li>Fullstack Dev</li>
-                    <li>UX</li>
-                    <li>Game Dev</li>
-                    <li>Agile Methoden</li>
-                    Ansonsten interessiere ich mich für Pixel Art, Klavier spielen und Sprachen!
-                </ul>
-            </div>
-        </section>
+        let currentHeight = 0;
+        if (iterations > 2) {
+            currentHeight = height * 0.72;
+        } else {
+            currentHeight = height * 0.8;
+        }
 
-        // <div>
-        //     <InfoPanelComponent>
-        //         <div>
-        //             Interessen
-        //         </div>
-        //         Fullstack
-        //     </InfoPanelComponent>
-        // </div>
-    );
+        return [
+            {
+                path: path,
+                anchor: anchor,
+                angle: angle,
+                rotatedPos: rotatedPos,
+                center: rotatedCenter,
+                //rotatedPos2: rotatedPos2,
+            },
+            ...generateTrapez(rotatedPos[0], rotatedPos[1], width / 2, currentHeight, angle - angleDelta - 25, newDelta, iterations - 1)
+            , ...generateTrapez(rotatedPos[0], rotatedPos[1], width / 2, currentHeight, angle + angleDelta + 25, newDelta, iterations - 1)
+            ,
+        ]
+    }
+
+    const fadeStyle = {
+        opacity: show ? 1 : 0,
+        transition: 'opacity 2s'
+    };
+
+    const sectionStyle = {
+        // width: "40vw",
+        // height: "20rem",
+        backgroundColor: "white",
+        borderWidth: "3px",
+        zIndex: 3,
+        width: "20vw",
+        animation: "fade-in 1",
+        borderStyle: "none"
+    }
+
+    return <section id="interests"
+                    style={{
+                        width: "100%",
+                        alignSelf: "center",
+                        minHeight: "150vh",
+                        // position: "relative",
+                        alignItems: "center",
+                        justifyContent: "end"
+                    }}
+                    className={"section-container flex-column"}>
+
+        <div style={{
+            backgroundColor: "white",
+            zIndex: "3",
+            padding: "0.5rem",
+            color: "black",
+            border: "black solid 1px",
+            margin: "4rem"
+        }}>
+            ❮<FormattedMessage id="title.interests"/>❯
+        </div>
+
+        <div className={"flex flex-row"} style={{gap: "3rem"}}>
+            <InfoPanelComponent customStyle={sectionStyle}>
+                <h3>
+                    Game Design
+                </h3>
+                <div>
+                    ★Frameworks / Engines★
+                </div>
+                LibGDX, Box2d, Godot
+                PixelArt
+            </InfoPanelComponent>
+            <InfoPanelComponent customStyle={sectionStyle}>
+                <h3>
+                    Programming
+                </h3>
+                <div>
+                    ★Languages★
+                </div>
+                Java, Typescript, Javascript, HTML, CSS, SQL, C++
+                <div>
+                    ★Frameworks★
+                </div>
+                AWS, React, Angular
+            </InfoPanelComponent>
+            <InfoPanelComponent customStyle={sectionStyle}>
+                <h3>
+                    Others
+                </h3>
+                #CozyGaming
+                #Piano
+                #ArtsAndCrafts
+                #StarTrek
+            </InfoPanelComponent>
+        </div>
+        <div style={{height: "60vh"}}>
+        </div>
+
+        <svg height={1400} width={1400} id="my-object" transform={"scale(1.4)"}
+             style={{position: "fixed", zIndex: "0", top: 100, right: 250, opacity: treeOpacityValue}}>
+            {pathArray.map((obj: any, index: any) =>
+                <>
+                    <path
+                        d={obj.path}
+                        fill={"#d4c9f8"}
+                        transform={`rotate(${obj.angle} ${obj.anchor[0]},${obj.anchor[1]})`}
+                    />
+
+                </>
+            )}
+            // TODO add 3 triangles to fake roots
+        </svg>
+
+    </section>;
 }
 
 export default InterestsSectionComponent;

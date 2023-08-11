@@ -8,7 +8,7 @@ interface InfoPanelComponentProps {
 const InfoPanelComponent = (props: InfoPanelComponentProps) => {
 
     return (
-        <div className={"panel flex-column"} style={props.customStyle}>
+        <div className={"panel flex-column"} style={{backdropFilter: "blur(10px)", ...props.customStyle}}>
             {props.children}
         </div>
     );

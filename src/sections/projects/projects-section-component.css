@@ -1,15 +1,16 @@
 .arrow {
-    width: 100%;
+    /*width: 100%;*/
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 
 .triangle-left {
     width: 0;
     height: 0;
     border-top: 30px solid transparent;
-    border-right: 50px solid var(--panel-bg);
+    border-right: 50px solid #2b2838;
     border-bottom: 30px solid transparent;
+    /*backdrop-filter: blur(10px);*/
 }
 
 .arrow-line {
@@ -23,6 +24,7 @@
 
 .arrow-date {
     font-size: 0.8rem;
-    width: 24%;
+    width: 25%;
     font-weight: bold;
+    margin: 0rem 0.5rem;
 }

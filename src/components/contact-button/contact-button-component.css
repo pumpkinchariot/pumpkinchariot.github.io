@@ -10,19 +10,21 @@
     padding: 0.4rem 0.6rem;
     margin-top: 4rem;
     font-size: 1.2rem;
-
     opacity: 0;
-    animation-name: fade-in;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+
+    animation-name: fade-in, pulsate;
+    animation-duration: 2s, 2s;
+    animation-delay: 2s, 3s;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards, none;
+
+}
+
+contact-button-animation {
+    animation-delay: 4s;
+    animation: pulsate 2s infinite;
 }
 
 .contact-button:hover {
     color: var(--white);
 }
-
-/*.contact-button:visited {*/
-/*    color: var(--highlight);*/
-/*    background-color: var(--white);*/
-/*}*/

@@ -1,8 +1,10 @@
 {
   "breadcrumb.home": "Home",
+  "breadcrumb.interests": "Interests",
   "breadcrumb.experience": "Experience",
   "breadcrumb.certificates": "Certificates",
 
+  "title.interests": "Interests",
   "title.projects": "Experience",
   "title.portfolio": "Portfolio",
   "title.certificates": "Certificates",
